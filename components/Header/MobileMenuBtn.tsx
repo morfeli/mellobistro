@@ -3,7 +3,7 @@ type MobileMenuBtnProps = {
   toggleMenu: React.MouseEventHandler<SVGSVGElement>;
 };
 
-const MobileMenuBtn = ({ isOpen, toggleMenu }: MobileMenuBtnProps) => {
+export const MobileMenuBtn = ({ isOpen, toggleMenu }: MobileMenuBtnProps) => {
   if (isOpen) {
     return (
       <svg
@@ -38,5 +38,3 @@ const MobileMenuBtn = ({ isOpen, toggleMenu }: MobileMenuBtnProps) => {
     );
   }
 };
-
-export default MobileMenuBtn;
