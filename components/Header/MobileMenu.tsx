@@ -27,22 +27,22 @@ export const MobileMenu = ({
           animate="open"
           transition={{ type: "spring", stiffness: 100 }}
           exit={{ opacity: 0, x: "100%" }}
-          className="absolute top-10 right-0 px-2 m-2"
+          className="absolute right-0 px-2 m-2 top-10"
         >
           <ul className="flex flex-col items-center py-2 rounded-lg px-14 justify-evenly bg-linen">
-            <NavItem isMobile={isMobile} closeMenu={closeMenu}>
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/">
               Home
             </NavItem>
-            <NavItem isMobile={isMobile} closeMenu={closeMenu}>
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/about">
               About
             </NavItem>
-            <NavItem isMobile={isMobile} closeMenu={closeMenu}>
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/menus">
               Menus
             </NavItem>
-            <NavItem isMobile={isMobile} closeMenu={closeMenu}>
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/events">
               Private Events
             </NavItem>
-            <NavItem isMobile={isMobile} closeMenu={closeMenu}>
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/gallery">
               Gallery
             </NavItem>
           </ul>

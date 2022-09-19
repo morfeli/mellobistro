@@ -1,14 +1,10 @@
-import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import classnames from "classnames";
 
-import { Footer } from "../components/Footer/Footer";
-import { Header } from "../components/Header/Header";
-import { HeroHome } from "../components/Hero/HeroHome";
-import { HeroHomeSlider } from "../components/Hero/HeroHomeSlider";
 import { useMelloContext } from "../components/helper/useMelloContext";
+import { Header } from "../components/Header/Header";
 
-const Home: NextPage = () => {
+const About = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
   const [navBarScrolled, setNavBarScrolled] = useState<boolean>(false);
 
@@ -45,17 +41,12 @@ const Home: NextPage = () => {
   } else {
     mainStyles = classnames("pt-12 bg-red-300 h-screen");
   }
-
   return (
     <div>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
-      <HeroHomeSlider />
-      <main className={mainStyles}>
-        <HeroHome />
-      </main>
-      <Footer isMobile={isMobile} />
+      <h1>About page</h1>
     </div>
   );
 };
 
-export default Home;
+export default About;

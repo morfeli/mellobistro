@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import classnames from "classnames";
 
 import { MobileMenuBtn } from "./MobileMenuBtn";
@@ -12,6 +13,7 @@ type HeaderProps = {
 
 export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const toggleMenuHandler = (): void => {
     setIsOpen((current) => !current);
   };
@@ -23,6 +25,11 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
 
   const toggleMode = () => {
     melloCtx.toggleMode();
+  };
+
+  const toggleSwitchVariants = {
+    initial: { x: 0 },
+    animate: { x: 30 },
   };
 
   let headerStyles;
@@ -40,8 +47,20 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
   return (
     <header className={headerStyles}>
       <h1>Logo</h1>
-      <button onClick={toggleMode}>click</button>
-      <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
+      <div className="flex items-center justify-between w-24">
+        <button
+          onClick={toggleMode}
+          className="flex items-center justify-start p-1 bg-slate-300 w-14 rounded-2xl"
+        >
+          <motion.div
+            variants={toggleSwitchVariants}
+            initial={"initial"}
+            animate={melloCtx.mode ? "animate" : "initial"}
+            className="w-4 h-4 bg-white rounded-full"
+          ></motion.div>
+        </button>
+        <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
+      </div>
       <MobileMenu isOpen={isOpen} isMobile={isMobile} closeMenu={closeMenu} />
     </header>
   );
