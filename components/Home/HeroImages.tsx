@@ -22,6 +22,14 @@ export const HeroImages = ({ image }: HeroHomeImagesProps) => {
     }
   }, [controls, inView]);
 
+  let styles;
+
+  if (innerWidth < 1000) {
+    styles = "m-4 grid-500:last:col-span-2";
+  } else {
+    styles = "m-4 last:col-span-1";
+  }
+
   return (
     <motion.div
       ref={ref}
@@ -29,7 +37,7 @@ export const HeroImages = ({ image }: HeroHomeImagesProps) => {
       initial="hidden"
       animate={controls}
       transition={{ duration: 1 }}
-      className="m-4 last:col-span-2 md:last:col-span-1"
+      className={styles}
     >
       <Image src={image} className="rounded-lg" width={350} height={350} />
     </motion.div>

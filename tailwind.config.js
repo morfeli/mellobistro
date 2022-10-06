@@ -53,6 +53,9 @@ module.exports = {
       gridTemplateColumns: {
         imageGrid: "repeat(auto-fit, minmax(250px, 1fr))",
       },
+      screens: {
+        "grid-500": "500px",
+      },
     },
   },
   plugins: [],

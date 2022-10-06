@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <main className={mainStyles}>
         <HeroImage />
-        <HeroHome />
+        <HeroHome innerWidth={innerWidth} />
       </main>
     </>
   );

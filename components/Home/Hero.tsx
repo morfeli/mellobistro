@@ -3,7 +3,11 @@ import imageTwo from "../../public/assets/mockup2-mellobistro.jpg";
 import imageThree from "../../public/assets/mockup3-mellobistro.jpg";
 import { HeroImages } from "./HeroImages";
 
-export const HeroHome = () => {
+type HeroHomeProps = {
+  innerWidth: number;
+};
+
+export const HeroHome = ({ innerWidth }: HeroHomeProps) => {
   const imageArray = [
     {
       id: 0,
