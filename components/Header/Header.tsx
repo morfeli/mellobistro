@@ -36,11 +36,11 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
 
   if (navBarScrolled) {
     headerStyles = classnames(
-      "bg-gradient-to-r from-white to-black p-2 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
+      "bg-red-300 p-4 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
     );
   } else {
     headerStyles = classnames(
-      "bg-gradient-to-r from-linen to-equestrian-green p-2 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
+      "bg-eerie-black p-4 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
     );
   }
 

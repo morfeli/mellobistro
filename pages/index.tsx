@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import { useState, useEffect } from "react";
 import classnames from "classnames";
 
-import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
-import { HeroHome } from "../components/Hero/HeroHome";
-import { HeroHomeSlider } from "../components/Hero/HeroHomeSlider";
+import { HeroHome } from "../components/Home/Hero";
+import { HeroImage } from "../components/Home/LandingHero";
+
 import { useMelloContext } from "../components/helper/useMelloContext";
 
 const Home: NextPage = () => {
@@ -47,14 +47,13 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div>
+    <>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
-      <HeroHomeSlider />
       <main className={mainStyles}>
+        <HeroImage />
         <HeroHome />
       </main>
-      <Footer isMobile={isMobile} />
-    </div>
+    </>
   );
 };
 

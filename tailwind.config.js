@@ -17,6 +17,42 @@ module.exports = {
         wallpaper:
           "url('https://images.getbento.com/accounts/b5f739004e05ee3ac67ce4a9d6d5e4c0/media/images/8499234319clean-gray-paper.png')",
       },
+      fontFamily: {
+        Author: ["Author", "sans-serif"],
+      },
+      backgroundImage: {
+        "hero-1": "url('../public/assets/example1.jpg')",
+      },
+
+      width: {
+        "25vw": "25vw",
+        "50vw": "45vw",
+      },
+      animation: {
+        slide: "slide 20s infinite",
+      },
+      keyframes: {
+        slide: {
+          "0%": {
+            backgroundImage: "url('../public/assets/example1.jpg')",
+          },
+          "25%": {
+            backgroundImage: "url('../public/assets/example2.jpg')",
+          },
+          "50%": {
+            backgroundImage: "url('../public/assets/example3.jpg')",
+          },
+          "75%": {
+            backgroundImage: "url('../public/assets/example4.jpg')",
+          },
+          "100%": {
+            backgroundImage: "url('../public/assets/example5.jpg')",
+          },
+        },
+      },
+      gridTemplateColumns: {
+        imageGrid: "repeat(auto-fit, minmax(250px, 1fr))",
+      },
     },
   },
   plugins: [],
