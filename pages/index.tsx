@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import classnames from "classnames";
 
 import { Header } from "../components/Header/Header";
-import { HeroHome } from "../components/Home/Hero";
+import { Hero } from "../components/Home/Hero";
 import { HeroImage } from "../components/Home/LandingHero";
 
 import { useMelloContext } from "../components/helper/useMelloContext";
@@ -41,9 +41,9 @@ const Home: NextPage = () => {
   let mainStyles;
 
   if (!melloCtx.mode) {
-    mainStyles = classnames("pt-12 bg-wallpaper h-screen");
+    mainStyles = classnames("bg-wallpaper");
   } else {
-    mainStyles = classnames("pt-12 bg-red-300 h-screen");
+    mainStyles = classnames("bg-red-300");
   }
 
   return (
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <main className={mainStyles}>
         <HeroImage />
-        <HeroHome innerWidth={innerWidth} />
+        <Hero innerWidth={innerWidth} />
       </main>
     </>
   );

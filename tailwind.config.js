@@ -22,11 +22,19 @@ module.exports = {
       },
       backgroundImage: {
         "hero-1": "url('../public/assets/example1.jpg')",
+        "hero-2": "url('../public/assets/example2.jpg')",
+        "hero-3": "url('../public/assets/example3.jpg')",
+        "hero-4": "url('../public/assets/example4.jpg')",
+        "hero-5": "url('../public/assets/example5.jpg')",
       },
 
       width: {
         "25vw": "25vw",
+        "40vw": "40vw",
         "50vw": "45vw",
+      },
+      height: {
+        "30vh": "30vh",
       },
       animation: {
         slide: "slide 20s infinite",

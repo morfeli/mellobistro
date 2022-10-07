@@ -5,9 +5,10 @@ import Image, { StaticImageData } from "next/image";
 
 type HeroHomeImagesProps = {
   image: StaticImageData;
+  innerWidth: number;
 };
 
-export const HeroImages = ({ image }: HeroHomeImagesProps) => {
+export const HeroImages = ({ image, innerWidth }: HeroHomeImagesProps) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -25,9 +26,9 @@ export const HeroImages = ({ image }: HeroHomeImagesProps) => {
   let styles;
 
   if (innerWidth < 1000) {
-    styles = "m-4 grid-500:last:col-span-2";
+    styles = "cursor-pointer m-4 grid-500:last:col-span-2 grid-500:last:w-50vw";
   } else {
-    styles = "m-4 last:col-span-1";
+    styles = "m-4 cursor-pointer last:col-span-1";
   }
 
   return (
@@ -38,6 +39,7 @@ export const HeroImages = ({ image }: HeroHomeImagesProps) => {
       animate={controls}
       transition={{ duration: 1 }}
       className={styles}
+      whileHover={{ translateY: -15 }}
     >
       <Image src={image} className="rounded-lg" width={350} height={350} />
     </motion.div>

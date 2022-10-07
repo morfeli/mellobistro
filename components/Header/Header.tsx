@@ -40,7 +40,7 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
     );
   } else {
     headerStyles = classnames(
-      "bg-eerie-black p-4 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
+      "bg-transparent p-4 flex justify-between items-center fixed top-0 z-50 w-screen transition-colors duration-1000"
     );
   }
 
