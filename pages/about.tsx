@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import classnames from "classnames";
 
-import { useMelloContext } from "../components/helper/useMelloContext";
 import { Header } from "../components/Header/Header";
 
 const About = () => {
@@ -11,8 +9,6 @@ const About = () => {
   const isMobile = innerWidth <= 767;
 
   const changeWidth = () => setInnerWidth(window.innerWidth);
-
-  const melloCtx = useMelloContext();
 
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -34,13 +30,6 @@ const About = () => {
     };
   }, [isMobile]);
 
-  let mainStyles;
-
-  if (!melloCtx.mode) {
-    mainStyles = classnames("pt-12 bg-wallpaper h-screen");
-  } else {
-    mainStyles = classnames("pt-12 bg-red-300 h-screen");
-  }
   return (
     <div>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
