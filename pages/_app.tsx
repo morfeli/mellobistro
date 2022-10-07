@@ -1,13 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { MelloBistroProvider } from "../components/store/mello-context";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <MelloBistroProvider>
-      <Component {...pageProps} />
-    </MelloBistroProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

@@ -2,6 +2,7 @@ import classnames from "classnames";
 import Link from "next/link";
 
 type NavItemProps = {
+  footer?: boolean;
   isMobile?: boolean;
   link: string;
   closeMenu?: React.MouseEventHandler<HTMLLIElement>;
@@ -13,11 +14,14 @@ export const NavItem = ({
   closeMenu,
   children,
   link,
+  footer,
 }: NavItemProps) => {
   const navItemStyle = classnames(
-    "text-orange-eng list-none tracking-widest uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-eerie-black after:transition-all duration-700 hover:after:w-full",
+    "list-none tracking-widest font-semibold uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-eerie-black after:transition-all duration-700 hover:after:w-full",
     {
       "my-4": isMobile,
+      "text-white": footer,
+      "text-black": !footer,
     }
   );
 

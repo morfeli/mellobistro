@@ -29,7 +29,7 @@ export const HeroImage = () => {
   });
 
   return (
-    <motion.div className="relative h-screen">
+    <motion.div className="relative flex items-center justify-between h-screen">
       <LeftSVG left={moveLeft} />
 
       {heroImageArray.map((image, i) => {

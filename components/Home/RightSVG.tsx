@@ -4,10 +4,7 @@ type RightSVGProps = {
 
 export const RightSVG = ({ right }: RightSVGProps) => {
   return (
-    <div
-      className="absolute right-0 w-20 h-20 p-4 m-4 cursor-pointer top-56"
-      onClick={right}
-    >
+    <div className="w-20 p-4 m-4 cursor-pointer " onClick={right}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30.729"

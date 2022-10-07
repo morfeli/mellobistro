@@ -4,10 +4,7 @@ type LeftSVGProps = {
 
 export const LeftSVG = ({ left }: LeftSVGProps) => {
   return (
-    <div
-      className="absolute left-0 w-20 h-20 p-4 m-4 cursor-pointer top-56"
-      onClick={left}
-    >
+    <div className="w-20 p-4 m-4 cursor-pointer" onClick={left}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30.725"
