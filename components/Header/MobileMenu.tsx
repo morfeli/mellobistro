@@ -27,9 +27,9 @@ export const MobileMenu = ({
           animate="open"
           transition={{ type: "spring", stiffness: 100 }}
           exit={{ opacity: 0, x: "100%" }}
-          className="absolute right-0 px-2 m-2 top-14"
+          className="absolute right-0 px-2 m-2 top-16"
         >
-          <ul className="flex flex-col items-center py-2 rounded-lg px-14 justify-evenly bg-linen">
+          <ul className="flex flex-col items-center py-2 rounded-lg bg-equestrian-green px-14 justify-evenly">
             <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/">
               Home
             </NavItem>

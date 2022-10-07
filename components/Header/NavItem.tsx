@@ -21,8 +21,7 @@ export const NavItem = ({
     {
       "my-4": isMobile,
       "mx-8": footer,
-      "text-white": footer,
-      "text-black": !footer,
+      "text-white": footer || isMobile,
     }
   );
 
