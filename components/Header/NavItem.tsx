@@ -20,6 +20,7 @@ export const NavItem = ({
     "list-none tracking-widest font-semibold uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-eerie-black after:transition-all duration-700 hover:after:w-full",
     {
       "my-4": isMobile,
+      "mx-8": footer,
       "text-white": footer,
       "text-black": !footer,
     }

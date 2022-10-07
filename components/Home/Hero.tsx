@@ -23,13 +23,13 @@ export const Hero = ({ innerWidth }: HeroProps) => {
   ];
 
   return (
-    <section className="flex flex-col">
-      <div className="pt-10 text-center">
-        <h1 className="text-3xl tracking-widest uppercase">
-          Welcome to Mello Bistro
+    <section className="flex flex-col py-12">
+      <div className="text-center">
+        <h1 className="pb-4 text-4xl tracking-widest uppercase">
+          Mello Bistro
         </h1>
-        <p>Insert cusine type here</p>
-        <p>Insert resturant description here</p>
+        <p className="pb-2">Insert cusine type here</p>
+        <p>Insert restaurant description here</p>
         <div className="grid my-4 transition-all grid-cols-imageGrid justify-items-center">
           {imageArray.map((image) => (
             <HeroImages
@@ -65,7 +65,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             ligula eget ante tincidunt laoreet.
           </p>
           <motion.button
-            className="self-center p-2 text-white rounded-md bg-equestrian-green"
+            className="self-start p-2 ml-8 text-white rounded-md bg-equestrian-green"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9, opacity: 0.8 }}
           >
