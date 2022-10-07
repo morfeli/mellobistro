@@ -51,6 +51,7 @@ export const HeroImage = () => {
               layout="fill"
               objectFit="cover"
               objectPosition="center"
+              alt="Hero Images"
             />
           </div>
         );

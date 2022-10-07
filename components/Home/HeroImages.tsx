@@ -41,7 +41,13 @@ export const HeroImages = ({ image, innerWidth }: HeroHomeImagesProps) => {
       className={styles}
       whileHover={{ translateY: -15 }}
     >
-      <Image src={image} className="rounded-lg" width={350} height={350} />
+      <Image
+        src={image}
+        className="rounded-lg"
+        width={350}
+        height={350}
+        alt="Images"
+      />
     </motion.div>
   );
 };
