@@ -32,6 +32,7 @@ module.exports = {
         "25vw": "25vw",
         "40vw": "40vw",
         "50vw": "45vw",
+        "75vw": "75vw",
       },
       height: {
         "30vh": "30vh",
@@ -60,6 +61,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         imageGrid: "repeat(auto-fit, minmax(250px, 1fr))",
+        galleryGrid: "repeat(auto-fit, minmax(325px, 1fr))",
       },
       screens: {
         "grid-500": "500px",

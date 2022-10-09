@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
+import { NextPage } from "next";
 
 import { Header } from "../components/Header/Header";
 import { LandingHero } from "../components/Home/LandingHero";
-import { HeroAbout } from "../components/About/About";
+import { HeroAbout } from "../components/About/HeroAbout";
 import { Footer } from "../components/Footer/Footer";
 
 import { OverLay } from "../components/UI/OverLay";
 import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
 import heroImageArray from "../components/Home/Images";
 
-const About = () => {
+const About: NextPage = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
   const [navBarScrolled, setNavBarScrolled] = useState<boolean>(false);
 
