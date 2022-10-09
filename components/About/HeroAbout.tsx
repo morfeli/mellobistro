@@ -13,8 +13,8 @@ export const HeroAbout = () => {
   return (
     <section className="flex flex-col py-8">
       <h1 className="self-center text-4xl">OUR STORY</h1>
-      <div className="self-center text-center lg:flex lg:items-center lg:w-screen">
-        <p className="p-6 text-xl leading-8 lg:leading-10 lg:w-50vw lg:">
+      <div className="self-center text-center lg:flex lg:items-center lg:justify-between">
+        <p className="p-6 text-xl leading-8 lg:leading-10 lg:w-50vw">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
           iure reprehenderit quod tenetur quia optio, voluptate quam, similique
           mollitia tempora ad dolore vitae nobis eaque, ullam doloribus aut
@@ -26,7 +26,7 @@ export const HeroAbout = () => {
           voluptate quam, similique mollitia tempora ad dolore vitae nobis
           eaque, ullam doloribus aut libero corrupti!
         </p>
-        <div className="mx-auto">
+        <div className="lg:w-50vw">
           <AboutSlider />
         </div>
       </div>
