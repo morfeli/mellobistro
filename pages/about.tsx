@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 
 import { Header } from "../components/Header/Header";
+import { LandingHero } from "../components/Home/LandingHero";
+import { HeroAbout } from "../components/About/About";
+import { Footer } from "../components/Footer/Footer";
+
+import { OverLay } from "../components/UI/OverLay";
+import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
+import heroImageArray from "../components/Home/Images";
 
 const About = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
@@ -33,7 +40,15 @@ const About = () => {
   return (
     <div>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
-      <h1>About page</h1>
+      <OverLay>
+        <LandingHero images={heroImageArray} />
+      </OverLay>
+
+      <MainBackgroundImage>
+        <HeroAbout />
+      </MainBackgroundImage>
+
+      <Footer isMobile={isMobile} />
     </div>
   );
 };

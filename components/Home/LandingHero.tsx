@@ -1,13 +1,18 @@
-import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, useCycle } from "framer-motion";
-
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+
 import heroImageArray from "./Images";
 import classNames from "classnames";
 import { LeftSVG } from "./LeftSVG";
 import { RightSVG } from "./RightSVG";
 
-export const HeroImage = () => {
+type LandingHeroProps = {
+  images: StaticImageData[];
+};
+
+export const LandingHero = ({ images }: LandingHeroProps) => {
   const [index, setIndex] = useState<number>(0);
 
   function moveRight() {
@@ -32,7 +37,7 @@ export const HeroImage = () => {
     <motion.div className="relative flex items-center justify-between h-screen">
       <LeftSVG left={moveLeft} />
 
-      {heroImageArray.map((image, i) => {
+      {images.map((image, i) => {
         return (
           <div
             key={i}

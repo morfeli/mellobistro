@@ -12,11 +12,9 @@ module.exports = {
         "hunter-green": "#3A5A40",
         "orange-eng": "#BF0603",
         "equestrian-green": "#556450",
+        overLay: "rgba(0, 0, 0, 0.3)",
       },
-      backgroundImage: {
-        wallpaper:
-          "url('https://images.getbento.com/accounts/b5f739004e05ee3ac67ce4a9d6d5e4c0/media/images/8499234319clean-gray-paper.png')",
-      },
+
       fontFamily: {
         Author: ["Author", "sans-serif"],
       },
@@ -26,6 +24,8 @@ module.exports = {
         "hero-3": "url('../public/assets/example3.jpg')",
         "hero-4": "url('../public/assets/example4.jpg')",
         "hero-5": "url('../public/assets/example5.jpg')",
+        wallpaper:
+          "url('https://images.getbento.com/accounts/b5f739004e05ee3ac67ce4a9d6d5e4c0/media/images/8499234319clean-gray-paper.png')",
       },
 
       width: {

@@ -3,8 +3,16 @@ import { useState, useEffect } from "react";
 
 import { Header } from "../components/Header/Header";
 import { Hero } from "../components/Home/Hero";
-import { HeroImage } from "../components/Home/LandingHero";
+import { OverLay } from "../components/UI/OverLay";
+import { LandingHero } from "../components/Home/LandingHero";
 import { Footer } from "../components/Footer/Footer";
+
+import heroImageArray from "../components/Home/Images";
+import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
+
+export interface ChildrenProps {
+  children: React.ReactNode;
+}
 
 const Home: NextPage = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
@@ -37,9 +45,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
-      <HeroImage />
+      <OverLay>
+        <LandingHero images={heroImageArray} />
+      </OverLay>
 
-      <Hero innerWidth={innerWidth} />
+      <MainBackgroundImage>
+        <Hero innerWidth={innerWidth} />
+      </MainBackgroundImage>
+
       <Footer isMobile={isMobile} />
     </>
   );
