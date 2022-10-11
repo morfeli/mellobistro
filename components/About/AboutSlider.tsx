@@ -1,8 +1,8 @@
-import heroImageArray from "../Home/Images";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import classNames from "classnames";
+import heroImageArray from "../Home/Images";
 
 export const AboutSlider = () => {
   const [index, setIndex] = useState(0);

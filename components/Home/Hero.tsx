@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 import imageOne from "../../public/assets/mockup-mellobistro.jpg";
 import imageTwo from "../../public/assets/mockup2-mellobistro.jpg";
@@ -10,6 +11,7 @@ type HeroProps = {
 };
 
 export const Hero = ({ innerWidth }: HeroProps) => {
+  const router = useRouter();
   const imageArray = [
     {
       id: 0,
@@ -21,6 +23,10 @@ export const Hero = ({ innerWidth }: HeroProps) => {
       image: imageThree,
     },
   ];
+
+  const navToAboutPage = () => {
+    router.push("/about");
+  };
 
   return (
     <section className="flex flex-col py-12">
@@ -68,6 +74,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             className="self-start p-2 ml-8 text-white rounded-md bg-equestrian-green"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9, opacity: 0.8 }}
+            onClick={navToAboutPage}
           >
             Learn More
           </motion.button>

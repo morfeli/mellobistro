@@ -24,6 +24,9 @@ export const Footer = ({ isMobile }: FooterProps) => {
         <NavItem isMobile={isMobile} link="/gallery" footer>
           Gallery
         </NavItem>
+        <NavItem isMobile={isMobile} link="/contact" footer>
+          Contact
+        </NavItem>
       </ul>
     </footer>
   );
