@@ -99,7 +99,9 @@ export const Form = () => {
   const validInput = classNames(
     "p-4 w-72 md:w-50vw rounded-md outline-equestrian-green"
   );
-  const invalidInput = classNames("p-4 rounded-md border-2 border-red-300");
+  const invalidInput = classNames(
+    "p-4 w-72 md:w-50vw rounded-md border-2 border-red-300"
+  );
   const inputContainer = classNames("m-4 flex flex-col items-center");
   const invalidMessage = classNames("text-red-600 pt-2 text-lg");
 
