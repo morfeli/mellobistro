@@ -20,7 +20,7 @@ export const Modal = ({ show, onClose, item }: ModalProps) => {
 
   let modalContent = show ? (
     <div className="fixed top-0 flex items-center justify-center w-screen h-screen bg-overLay">
-      <div className="flex flex-col items-center px-4 py-2 bg-white rounded-md justify-evenly sm:w-75vw">
+      <div className="flex flex-col items-center px-4 py-2 m-6 bg-white rounded-md justify-evenly sm:w-75vw">
         {item && (
           <div className="m-2">
             <Image
