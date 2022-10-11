@@ -1,17 +1,18 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { SetStateAction } from "react";
 
 import ReactDOM from "react-dom";
 
 type ModalProps = {
+  children?: React.ReactNode;
   onClose: React.MouseEventHandler<HTMLButtonElement>;
   show: boolean;
-  item: StaticImageData | null;
+  item?: StaticImageData | null;
 };
 
-export const Modal = ({ show, onClose, item }: ModalProps) => {
+export const Modal = ({ show, onClose, item, children }: ModalProps) => {
   const [sendPortal, sentSendPortal] = useState(false);
 
   useEffect(() => {
@@ -33,12 +34,19 @@ export const Modal = ({ show, onClose, item }: ModalProps) => {
             <p>Enter image description here</p>
           </div>
         )}
-        <button
+        {children && (
+          <div className="p-8 text-center">
+            <p className="text-lg">{children}</p>
+          </div>
+        )}
+        <motion.button
           onClick={onClose}
           className="px-8 py-2 text-white rounded-md bg-hunter-green"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9, opacity: 0.7 }}
         >
           Close
-        </button>
+        </motion.button>
       </div>
     </div>
   ) : null;

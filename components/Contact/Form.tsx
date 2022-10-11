@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Modal } from "../Modal/Modal";
 import classNames from "classnames";
 
 type FormProps = {
@@ -59,6 +60,11 @@ const isEmailValid = (value: string) => {
 
 export const Form = () => {
   const [form, setForm] = useState<FormProps>(initialFormState);
+  const [renderModal, setRenderModal] = useState<boolean>(false);
+
+  function onClose() {
+    setRenderModal(false);
+  }
 
   const submitFormHandler = (e: any) => {
     e.preventDefault();
@@ -90,7 +96,7 @@ export const Form = () => {
     if (!formIsValid) {
       return;
     } else {
-      console.log(true);
+      setRenderModal(true);
     }
 
     setForm(initialFormState);
@@ -111,165 +117,173 @@ export const Form = () => {
   };
 
   return (
-    <form
-      className="flex flex-col items-center py-8"
-      onSubmit={submitFormHandler}
-    >
-      <div className={inputContainer}>
-        <label htmlFor="fName">
-          <input
-            id="fName"
-            type="text"
-            placeholder="First Name"
-            name="fName"
-            onChange={(e) =>
-              setForm((current) => ({
-                ...current,
-                firstName: e.target.value,
-                touched: {
-                  ...current.touched,
-                  firstName: true,
-                },
-                validity: {
-                  ...current.validity,
-                  firstName: true,
-                },
-              }))
-            }
-            value={form.firstName}
-            className={form.validity.firstName ? validInput : invalidInput}
-          />
-        </label>
-        {!form.validity.firstName && (
-          <span className={invalidMessage}>Please enter your first name.</span>
-        )}
-      </div>
-      <div className={inputContainer}>
-        <label htmlFor="lName">
-          <input
-            id="lName"
-            type="text"
-            name="lName"
-            placeholder="Last Name"
-            onChange={(e) =>
-              setForm((current) => ({
-                ...current,
-                lastName: e.target.value,
-                touched: {
-                  ...current.touched,
-                  lastName: true,
-                },
-                validity: {
-                  ...current.validity,
-                  lastName: true,
-                },
-              }))
-            }
-            value={form.lastName}
-            className={form.validity.lastName ? validInput : invalidInput}
-          />
-        </label>
-        {!form.validity.lastName && (
-          <span className={invalidMessage}>Please enter your last name.</span>
-        )}
-      </div>
-      <div className={inputContainer}>
-        <label htmlFor="email">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Email address"
-            onChange={(e) =>
-              setForm((current) => ({
-                ...current,
-                email: e.target.value,
-                touched: {
-                  ...current.touched,
-                  email: true,
-                },
-                validity: {
-                  ...current.validity,
-                  email: true,
-                },
-              }))
-            }
-            value={form.email}
-            className={form.validity.email ? validInput : invalidInput}
-          />
-        </label>
-        {!form.validity.email && (
-          <span className={invalidMessage}>
-            Please enter your email address.
-          </span>
-        )}
-      </div>
-      <div className={inputContainer}>
-        <label htmlFor="phone">
-          <input
-            id="phone"
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            onChange={(e) =>
-              setForm((current) => ({
-                ...current,
-                phone: e.target.value,
-                touched: {
-                  ...current.touched,
-                  phone: true,
-                },
-                validity: {
-                  ...current.validity,
-                  phone: true,
-                },
-              }))
-            }
-            value={form.phone}
-            className={form.validity.phone ? validInput : invalidInput}
-          />
-        </label>
-        {!form.validity.phone && (
-          <span className={invalidMessage}>
-            Please enter your phone number.
-          </span>
-        )}
-      </div>
-      <div className={inputContainer}>
-        <label htmlFor="message">
-          <textarea
-            className={form.validity.message ? validInput : invalidInput}
-            id="message"
-            name="message"
-            placeholder="Leave a message"
-            onChange={(e) =>
-              setForm((current) => ({
-                ...current,
-                message: e.target.value,
-                touched: {
-                  ...current.touched,
-                  message: true,
-                },
-                validity: {
-                  ...current.validity,
-                  message: true,
-                },
-              }))
-            }
-            value={form.message}
-          />
-        </label>
-        {!form.validity.message && (
-          <span className={invalidMessage}>Please enter your message.</span>
-        )}
-      </div>
-
-      <button
-        type="submit"
-        className="px-8 py-4 text-white rounded-md bg-equestrian-green"
+    <>
+      <form
+        className="flex flex-col items-center py-8"
+        onSubmit={submitFormHandler}
       >
-        Submit
-      </button>
-    </form>
+        <div className={inputContainer}>
+          <label htmlFor="fName">
+            <input
+              id="fName"
+              type="text"
+              placeholder="First Name"
+              name="fName"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  firstName: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    firstName: true,
+                  },
+                  validity: {
+                    ...current.validity,
+                    firstName: true,
+                  },
+                }))
+              }
+              value={form.firstName}
+              className={form.validity.firstName ? validInput : invalidInput}
+            />
+          </label>
+          {!form.validity.firstName && (
+            <span className={invalidMessage}>
+              Please enter your first name.
+            </span>
+          )}
+        </div>
+        <div className={inputContainer}>
+          <label htmlFor="lName">
+            <input
+              id="lName"
+              type="text"
+              name="lName"
+              placeholder="Last Name"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  lastName: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    lastName: true,
+                  },
+                  validity: {
+                    ...current.validity,
+                    lastName: true,
+                  },
+                }))
+              }
+              value={form.lastName}
+              className={form.validity.lastName ? validInput : invalidInput}
+            />
+          </label>
+          {!form.validity.lastName && (
+            <span className={invalidMessage}>Please enter your last name.</span>
+          )}
+        </div>
+        <div className={inputContainer}>
+          <label htmlFor="email">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  email: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    email: true,
+                  },
+                  validity: {
+                    ...current.validity,
+                    email: true,
+                  },
+                }))
+              }
+              value={form.email}
+              className={form.validity.email ? validInput : invalidInput}
+            />
+          </label>
+          {!form.validity.email && (
+            <span className={invalidMessage}>
+              Please enter your email address.
+            </span>
+          )}
+        </div>
+        <div className={inputContainer}>
+          <label htmlFor="phone">
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  phone: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    phone: true,
+                  },
+                  validity: {
+                    ...current.validity,
+                    phone: true,
+                  },
+                }))
+              }
+              value={form.phone}
+              className={form.validity.phone ? validInput : invalidInput}
+            />
+          </label>
+          {!form.validity.phone && (
+            <span className={invalidMessage}>
+              Please enter your phone number.
+            </span>
+          )}
+        </div>
+        <div className={inputContainer}>
+          <label htmlFor="message">
+            <textarea
+              className={form.validity.message ? validInput : invalidInput}
+              id="message"
+              name="message"
+              placeholder="Leave a message"
+              onChange={(e) =>
+                setForm((current) => ({
+                  ...current,
+                  message: e.target.value,
+                  touched: {
+                    ...current.touched,
+                    message: true,
+                  },
+                  validity: {
+                    ...current.validity,
+                    message: true,
+                  },
+                }))
+              }
+              value={form.message}
+            />
+          </label>
+          {!form.validity.message && (
+            <span className={invalidMessage}>Please enter your message.</span>
+          )}
+        </div>
+
+        <button
+          type="submit"
+          className="px-8 py-4 text-white rounded-md bg-equestrian-green"
+        >
+          Submit
+        </button>
+      </form>
+      <Modal show={renderModal} onClose={onClose}>
+        Thank you for reaching out to us. We will be in contact within the next
+        24 hours!
+      </Modal>
+    </>
   );
 };
