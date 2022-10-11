@@ -23,7 +23,13 @@ export const Modal = ({ show, onClose, item }: ModalProps) => {
       <div className="flex flex-col items-center px-4 py-2 bg-white rounded-md justify-evenly sm:w-75vw">
         {item && (
           <div className="m-2">
-            <Image src={item} width={375} height={375} className="rounded-md" />
+            <Image
+              src={item}
+              width={375}
+              height={375}
+              className="rounded-md"
+              alt="Image"
+            />
             <p>Enter image description here</p>
           </div>
         )}

@@ -57,6 +57,7 @@ export const HeroGallery = () => {
               width={350}
               height={350}
               className="m-4 rounded-3xl"
+              alt="Image"
             />
           </motion.div>
         ))}
