@@ -37,7 +37,7 @@ export const HeroAbout = () => {
         <a href="https://storyset.com/internet" className="hidden">
           Internet illustrations by Storyset
         </a>
-        <p className="py-8 text-xl text-center">
+        <p className="p-8 text-xl text-center">
           Join our newsletter and stay updated for our monthly specials and
           promotions!
         </p>
