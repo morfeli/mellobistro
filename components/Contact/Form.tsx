@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Modal } from "../Modal/Modal";
 import classNames from "classnames";
+import emailjs from "@emailjs/browser";
 
 type FormProps = {
   firstName: string;
@@ -96,6 +97,21 @@ export const Form = () => {
     if (!formIsValid) {
       return;
     } else {
+      emailjs
+        .sendForm(
+          "contact_service",
+          "template_juoa6ir",
+          e.target,
+          "user_kwfk7unP7jS9DOSbszb09"
+        )
+        .then(
+          (result: any) => {
+            console.log(result.text);
+          },
+          (error: any) => {
+            console.log(error.message);
+          }
+        );
       setRenderModal(true);
     }
 
@@ -123,12 +139,12 @@ export const Form = () => {
         onSubmit={submitFormHandler}
       >
         <div className={inputContainer}>
-          <label htmlFor="fName">
+          <label htmlFor="fname">
             <input
-              id="fName"
+              id="fname"
               type="text"
               placeholder="First Name"
-              name="fName"
+              name="fname"
               onChange={(e) =>
                 setForm((current) => ({
                   ...current,
@@ -156,9 +172,9 @@ export const Form = () => {
         <div className={inputContainer}>
           <label htmlFor="lName">
             <input
-              id="lName"
+              id="lname"
               type="text"
-              name="lName"
+              name="lname"
               placeholder="Last Name"
               onChange={(e) =>
                 setForm((current) => ({

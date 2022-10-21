@@ -47,7 +47,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           ))}
         </div>
       </div>
-      <div className="lg:flex lg:justify-around">
+      <div className="lg:flex lg:justify-around lg:items-center">
         <div className="flex flex-col lg:w-50vw lg:p-6">
           <h1 className="self-start ml-8 text-3xl">OUR BRAND</h1>
           <p className="px-8 py-4 text-lg leading-7 text-left">
