@@ -62,6 +62,7 @@ module.exports = {
       gridTemplateColumns: {
         imageGrid: "repeat(auto-fit, minmax(250px, 1fr))",
         galleryGrid: "repeat(auto-fit, minmax(325px, 1fr))",
+        menuGrid: "repeat(auto-fit, minmax(450px, 1fr))",
       },
       screens: {
         "grid-500": "500px",

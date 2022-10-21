@@ -30,7 +30,7 @@ export const HeroAbout = () => {
           <AboutSlider />
         </div>
       </div>
-      <div className="flex flex-col mx-auto lg:w-50vw">
+      {/* <div className="flex flex-col mx-auto lg:w-50vw">
         <div className="mx-auto w-96">
           <EmailSVG />
         </div>
@@ -50,7 +50,7 @@ export const HeroAbout = () => {
         >
           Join Now!
         </motion.button>
-      </div>
+      </div> */}
     </section>
   );
 };

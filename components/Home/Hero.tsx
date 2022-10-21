@@ -5,6 +5,7 @@ import imageOne from "../../public/assets/mockup-mellobistro.jpg";
 import imageTwo from "../../public/assets/mockup2-mellobistro.jpg";
 import imageThree from "../../public/assets/mockup3-mellobistro.jpg";
 import { HeroImages } from "./HeroImages";
+import { Map } from "./Map";
 
 type HeroProps = {
   innerWidth: number;
@@ -46,8 +47,8 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           ))}
         </div>
       </div>
-      <div className="lg:flex">
-        <div className="flex flex-col lg:w-50vw">
+      <div className="lg:flex lg:justify-around">
+        <div className="flex flex-col lg:w-50vw lg:p-6">
           <h1 className="self-start ml-8 text-3xl">OUR BRAND</h1>
           <p className="px-8 py-4 text-lg leading-7 text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
@@ -57,18 +58,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             faucibus lectus sit amet condimentum. Quisque pulvinar, mi quis
             aliquet scelerisque, leo sem semper mi, at sodales velit sapien in
             ex. Etiam egestas venenatis orci vel ornare. In a ex porta, mollis
-            odio ut, aliquam metus. Mauris eget sodales est, eget gravida magna.
-            Nulla lorem quam, pellentesque nec nunc eget, ornare bibendum
-            libero. In ac risus neque. Curabitur eget blandit dolor. Vestibulum
-            at nunc at leo tristique molestie nec sed ex. Nunc non tortor
-            viverra, ultrices massa nec, molestie turpis. Sed semper nibh massa,
-            sed lacinia dui sollicitudin in. Praesent finibus lorem non sagittis
-            fermentum. In laoreet dapibus odio, at dignissim tellus luctus non.
-            Vestibulum a magna nec turpis tempor placerat. Etiam ac tempor
-            massa, ut sollicitudin ligula. Duis et egestas velit. Curabitur at
-            metus ipsum. Duis sit amet ipsum eu nibh aliquam laoreet. Proin
-            lacinia mauris ac metus porta, at mollis leo tempus. Nulla nec
-            ligula eget ante tincidunt laoreet.
+            odio ut, aliquam metus.
           </p>
           <motion.button
             className="self-start p-2 ml-8 text-white rounded-md bg-equestrian-green"
@@ -79,7 +69,12 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             Learn More
           </motion.button>
         </div>
-        <div className="self-center">INSERT MAP HERE</div>
+        <div className="flex flex-col items-center pt-12 text-lg">
+          <h1 className="text-3xl">Hours & Location</h1>
+          <p className="py-2">1233 Bay Street Staten Island 10305 New York</p>
+          <p className="pb-4">(718)-285-4574</p>
+          <Map />
+        </div>
       </div>
     </section>
   );

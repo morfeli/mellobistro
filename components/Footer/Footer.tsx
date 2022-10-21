@@ -6,7 +6,7 @@ type FooterProps = {
 
 export const Footer = ({ isMobile }: FooterProps) => {
   return (
-    <footer className="flex flex-col items-center text-white bg-equestrian-green sm:p-8">
+    <footer className="flex flex-col items-center text-white bg-equestrian-green  sm:p-8">
       <h1>Logo</h1>
       <ul className="text-center sm:flex sm:justify-between sm:w-screen sm:px-2">
         <NavItem isMobile={isMobile} link="/" footer>
