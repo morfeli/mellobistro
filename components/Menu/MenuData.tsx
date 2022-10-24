@@ -72,7 +72,7 @@ export const MenuData = [
         name: "Caesar Salad",
         description:
           "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano Add Grilled chicken $6 shrimp $2 each",
-        price: "7.95",
+        price: "13.95",
       },
       {
         name: "Beet Salad",
@@ -236,11 +236,6 @@ export const MenuData = [
           "Fall off the bone ribs, roasted fingerling potatoes, rainbow carrots & red wine beef jus",
         price: "39.95",
       },
-      {
-        name: "Vitello alla Parmigiana",
-        description: "Veal Scaloppini over Capellini in a Pink Tomato Saucr",
-        price: "24.95",
-      },
     ],
     speciality: [
       {
@@ -278,7 +273,6 @@ export const MenuData = [
       { name: "Sautéed Broccoli di Rabe", price: "8.95" },
       { name: "Sautéed mushrooms", price: "7.95" },
       { name: "Parmesan truffle French fries", price: "7.95" },
-      { name: "Truffle yucca fries", price: "7.95" },
       { name: "Braised rainbow carrots", price: "7.95" },
     ],
     kids: [

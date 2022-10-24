@@ -47,7 +47,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           ))}
         </div>
       </div>
-      <div className="lg:flex lg:justify-around lg:items-center">
+      <div className="lg:flex lg:justify-around lg:items-baseline">
         <div className="flex flex-col lg:w-50vw lg:p-6">
           <h1 className="self-start ml-8 text-3xl">OUR BRAND</h1>
           <p className="px-8 py-4 text-lg leading-7 text-left">
@@ -72,7 +72,14 @@ export const Hero = ({ innerWidth }: HeroProps) => {
         <div className="flex flex-col items-center pt-12 text-lg">
           <h1 className="text-3xl">Hours & Location</h1>
           <p className="py-2">1233 Bay Street Staten Island 10305 New York</p>
-          <p className="pb-4">(718)-285-4574</p>
+          <h2>Monday - Saturday</h2>
+          <p>Lunch 11am - 3pm</p>
+          <p>Dinner 5pm - 10:30pm</p>
+          <h2>Sunday</h2>
+          <p>Brunch 10am - 3pm</p>
+          <p>Dinner 5pm - 9:30pm</p>
+
+          <p className="pb-4">718.285.4574</p>
           <Map />
         </div>
       </div>
