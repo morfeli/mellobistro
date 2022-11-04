@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { MobileMenuBtn } from "./MobileMenuBtn";
 import { MobileMenu } from "./MobileMenu";
+import LogoSVG from "../../public/SVG/logo-army-green.svg";
 
 import { Navigation } from "./Navigation";
 
@@ -29,7 +31,7 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         transition={{ delay: 1 }}
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
-        <h1>Logo</h1>
+        <Image src={LogoSVG} alt="logo" width={100} />
         <div className="flex items-center justify-between">
           {isMobile && (
             <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
@@ -46,27 +48,11 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         transition={{ delay: 2 }}
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
-        <h1>Logo</h1>
+        <Image src={LogoSVG} alt="logo" width={150} />
         <div className="flex items-center justify-between">
           <Navigation />
         </div>
       </motion.header>
     );
   }
-
-  // return (
-  //   <header className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white">
-  //     <h1>Logo</h1>
-  //     <div className="flex items-center justify-between">
-  //       {isMobile && (
-  //         <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
-  //       )}
-  //     </div>
-  //     {isMobile ? (
-  //       <MobileMenu isOpen={isOpen} isMobile={isMobile} closeMenu={closeMenu} />
-  //     ) : (
-  //       <Navigation />
-  //     )}
-  //   </header>
-  // );
 };

@@ -33,7 +33,7 @@ export const AboutSlider = () => {
               alt="Mello Bistro Ownership"
               width={500}
               height={500}
-              className="inline-block mx-2 my-2 rounded-3xl"
+              className="inline-block m-2 rounded-3xl"
               priority
             />
           ))}

@@ -31,12 +31,12 @@ export const Hero = ({ innerWidth }: HeroProps) => {
 
   return (
     <section className="flex flex-col py-12">
-      <div className="text-center">
+      <div className="text-xl text-center">
         <h1 className="pb-4 text-4xl tracking-widest uppercase">
           Mello Bistro
         </h1>
-        <p className="pb-2">Insert cusine type here</p>
-        <p>Insert restaurant description here</p>
+        <p className="pb-2">Innovative Italian Restaurant</p>
+        <p>Modern Italian Cuisine With a French Twist</p>
         <div className="grid my-4 transition-all grid-cols-imageGrid justify-items-center">
           {imageArray.map((image) => (
             <HeroImages
