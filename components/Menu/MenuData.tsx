@@ -16,7 +16,7 @@ export const MenuData = [
       {
         name: "Tuna Tartare ",
         description:
-          "Avocado mousse, wasabi-jalapeno aioli, capers, ginger, pickle onions",
+          "Avocado mousse, shiracha aioli, capers, ginger, pickle onions",
         price: "16.95",
       },
       {
@@ -187,34 +187,34 @@ export const MenuData = [
     ],
     pollo: [
       {
-        name: "Brick-pressed roasted chicken",
+        name: "Pollo al Balsamic",
         description:
-          "Served with wild rice, pico de gallo, crispy yucca truffle, rosemary citrus emulsion",
-        price: "23.95",
+          "Chicken breast, spinach, prosciutto, smoked mozzarella, balsamic reduction, potato puree.",
+        price: "24.95",
       },
       {
         name: "Blackened Chicken",
         description:
           "Pan seared blackened chicken breast,vegetable-ginger stir fried quinoa, teriyaki reduction, mandarin chutney, roasted almonds",
-        price: "23.95",
+        price: "24.95",
       },
       {
         name: "Chicken Parma vodka sauce",
         description:
           "crispy chicken gratin with mozzarella cheese, in mello’s vodka sauce served with capellini al Pomodoro",
-        price: "24.95",
+        price: "25.95",
       },
       {
         name: "Grilled Pollo Paillard",
         description:
           "Thinly pounded chicken breast served with arugula, grape tomatoes, grilled portobello, avocado, truffle lemon dressing, balsamic reduction",
-        price: "22.95",
+        price: "23.95",
       },
       {
-        name: "Coq au Vin",
+        name: "Conq au Vin",
         description:
           "Red wine braised chicken legs, bacon lardons, button mushrooms, pearl onions, creamy polenta",
-        price: "23.95",
+        price: "25.95",
       },
     ],
     carni: [
@@ -227,7 +227,7 @@ export const MenuData = [
       {
         name: "Stuffed pork chop al Dijon",
         description:
-          "Prime French-cut pork chop with smoked mozzarella, spinach, prosciutto, dijon mustard sauce, braised rainbow carrots, rosemary fingerling potatoes",
+          "Prime French-cut pork chop with smoked mozzarella, spinach, prosciutto, mushroom dijon mustard sauce, braised rainbow carrots, rosemary fingerling potatoes",
         price: "29.95",
       },
       {
@@ -242,12 +242,12 @@ export const MenuData = [
         name: "Bistro Burger",
         description:
           "10oz Angus burger, thick cut bacon, caramelized onion, aged Comté cheese, arugula, tomato, remoulade sauce, toasted brioche, truffle parmesan fries",
-        price: "17.95",
+        price: "18.95",
       },
       {
         name: "Vegan Burger",
         description:
-          "Lentils, mushrooms, brown rice, walnuts, roasted veggies, arugula, avocado spread, vegan mozzarella cheese, vegan potato roll, remoulade sauce",
+          "Lentils, mushrooms, quinoa, walnuts, roasted veggies, arugula, avocado spread, vegan mozzarella cheese, vegan potato roll, remoulade sauce",
         price: "15.95",
       },
       {
@@ -257,10 +257,15 @@ export const MenuData = [
         price: "16.95",
       },
       {
-        name: "Vegan & GF Lasagna alla “Bolognese",
+        name: "Spaghetti alla Bolognese",
+        description: "Homemade traditional bolognese sauce",
+        price: "16.95",
+      },
+      {
+        name: "Lasagna alla Bolognese",
         description:
-          "Vegan beef, eggplant, vegan ricotta, marinara, vegan mozzarella",
-        price: "24.95",
+          "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
+        price: "23.95",
       },
       {
         name: "The Cheese Board",
@@ -268,11 +273,17 @@ export const MenuData = [
           "An assortment of cured meats and cheese with figs, apricot jam, olives, fruits, nuts & crostine",
         price: "27.95",
       },
+      {
+        name: "Soup of the Day",
+        description:
+          "Ask your server for more details regarding the soup of the day",
+        price: "10.00",
+      },
     ],
     sides: [
-      { name: "Sautéed Broccoli di Rabe", price: "8.95" },
+      { name: "Sautéed broccoli di rabe", price: "8.95" },
       { name: "Sautéed mushrooms", price: "7.95" },
-      { name: "Parmesan truffle French fries", price: "7.95" },
+      { name: "Parmesan truffle french fries", price: "7.95" },
       { name: "Braised rainbow carrots", price: "7.95" },
     ],
     kids: [
