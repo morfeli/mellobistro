@@ -66,6 +66,12 @@ export const MenuData = [
           "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
         price: "App $17.95 - Main Course $27.95",
       },
+      {
+        name: "Soup of the Day",
+        description:
+          "Ask your server for more details regarding the soup of the day",
+        price: "10.00",
+      },
     ],
     salads: [
       {
@@ -95,7 +101,7 @@ export const MenuData = [
       {
         name: "Caprese Salad",
         description:
-          "Fresh mozzarella, heirloom tomato, basil oil, balsamic reduction",
+          "Fresh mozzarella, tomato, basil oil, grapefruit heirloom tomato confit, balsamic reduction",
         price: "13.95",
       },
     ],
@@ -105,6 +111,17 @@ export const MenuData = [
         name: "Gnocchi Genovese",
         description: "Homemade gnocchi, mushroom-pesto cream sauce",
         price: "15.95",
+      },
+      {
+        name: "Spaghetti alla Bolognese",
+        description: "Homemade traditional bolognese sauce",
+        price: "16.95",
+      },
+      {
+        name: "Lasagna alla Bolognese",
+        description:
+          "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
+        price: "23.95",
       },
       {
         name: "Black linguine alla Pescatora",
@@ -257,39 +274,72 @@ export const MenuData = [
         price: "16.95",
       },
       {
-        name: "Spaghetti alla Bolognese",
-        description: "Homemade traditional bolognese sauce",
-        price: "16.95",
-      },
-      {
-        name: "Lasagna alla Bolognese",
-        description:
-          "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
-        price: "23.95",
-      },
-      {
         name: "The Cheese Board",
         description:
           "An assortment of cured meats and cheese with figs, apricot jam, olives, fruits, nuts & crostine",
         price: "27.95",
       },
+    ],
+    desserts: [
       {
-        name: "Soup of the Day",
+        name: "Chocolatissimo",
         description:
-          "Ask your server for more details regarding the soup of the day",
+          "Warm chocolate cake with runny chocolate ganache, vanilla ice cream, strawberry coulis",
+        price: "10.00",
+      },
+      {
+        name: "Tiramisu",
+        description: "Classic italian tiramisu",
+        price: "10.00",
+      },
+      {
+        name: "NY Cheesecake",
+        description:
+          "Classic cheese cake, graham cracker crust, homemade caramel",
+        price: "10.00",
+      },
+      {
+        name: "Creme brulee",
+        description: "Classic vanilla custard, caramelized sugar crust",
+        price: "10.00",
+      },
+      {
+        name: "Apple tart",
+        description:
+          "Puff pastry, caramelized applies, caramel, vanilla ice cream",
+        price: "10.00",
+      },
+      {
+        name: "Panna cotta",
+        description: "Coconut custard, strawberry coulis",
+        price: "10.00",
+      },
+      {
+        name: "Chocolate tartufo",
+        description: "Chocolate pistachio ice cream",
+        price: "10.00",
+      },
+      {
+        name: "Vegan GF Apple Crisp",
+        description: "Dairy free caramel, vanilla ice cream",
+        price: "10.00",
+      },
+      {
+        name: "Sorbet Selection",
+        description: "Coconut, lemon, mixed berry",
         price: "10.00",
       },
     ],
     sides: [
       { name: "Sautéed broccoli di rabe", price: "8.95" },
       { name: "Sautéed mushrooms", price: "7.95" },
+      { name: "Potato puree", price: "7.95" },
       { name: "Parmesan truffle french fries", price: "7.95" },
       { name: "Braised rainbow carrots", price: "7.95" },
     ],
     kids: [
       { name: "Chicken fingers with french fries", price: "13.95" },
       { name: "Fried mozzarella with french fries", price: "13.95" },
-      { name: "Cheese ravioli with alfredo sauce", price: "13.95" },
     ],
   },
 ];

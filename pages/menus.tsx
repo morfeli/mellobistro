@@ -45,8 +45,18 @@ const Menus: NextPage = () => {
     };
   }, [isMobile]);
 
-  const { apps, carni, kids, pasta, pesce, pollo, sides, speciality, salads } =
-    MenuData[0];
+  const {
+    apps,
+    carni,
+    kids,
+    pasta,
+    pesce,
+    pollo,
+    sides,
+    speciality,
+    salads,
+    desserts,
+  } = MenuData[0];
 
   return (
     <>
@@ -64,6 +74,7 @@ const Menus: NextPage = () => {
           to provide a varity of healthy options. Feel free to call us in
           advance to learn more about what we are offering.
         </p>
+
         <p></p>
         <MenuCards>
           <div className="md:w-50vw">
@@ -73,11 +84,12 @@ const Menus: NextPage = () => {
             <MenuCard data={carni} title="Carni" />
           </div>
           <div className="md:w-50vw">
-            <MenuCard data={pollo} title="Pollo" />
             <MenuCard data={pesce} title="Pesce" />
+            <MenuCard data={pollo} title="Pollo" />
             <MenuCard data={speciality} title="Speciality" />
             <MenuCard data={kids} title="Kids" />
             <MenuCard data={sides} title="Sides" />
+            <MenuCard data={desserts} title="Desserts" />
           </div>
         </MenuCards>
       </MainBackgroundImage>
