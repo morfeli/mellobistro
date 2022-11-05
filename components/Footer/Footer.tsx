@@ -9,7 +9,7 @@ type FooterProps = {
 export const Footer = ({ isMobile }: FooterProps) => {
   return (
     <footer className="flex flex-col items-center justify-between pb-4 text-white bg-equestrian-green">
-      <div className="w-96">
+      <div className="mx-auto w-72 md:w-96">
         <Image src={LogoWordMark} alt="Logo word mark" priority />
       </div>
       <ul className="text-center sm:flex sm:justify-between sm:w-screen sm:px-2">
