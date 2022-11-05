@@ -45,7 +45,7 @@ export const MenuData = [
       {
         name: "Blistered Shishito Peppers",
         description:
-          "yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
+          "Yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
         price: "13.95",
       },
       {
@@ -77,7 +77,7 @@ export const MenuData = [
       {
         name: "Caesar Salad",
         description:
-          "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano Add Grilled chicken $6 shrimp $2 each",
+          "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano - Grilled Chicken $6 - Shrimp $2",
         price: "13.95",
       },
       {
@@ -168,7 +168,7 @@ export const MenuData = [
       {
         name: "Pepper Crusted Tuna",
         description:
-          "3 color peppercorn crusted tuna steak, braised endive, arugula, caramelized onion, confit grape tomatoes,beurre blanc",
+          "3 color peppercorn crusted tuna steak, braised endive, arugula, caramelized onion, confit grape tomatoes, beurre blanc",
         price: "34.95",
       },
       {
@@ -218,7 +218,7 @@ export const MenuData = [
       {
         name: "Chicken Parma vodka sauce",
         description:
-          "crispy chicken gratin with mozzarella cheese, in mello’s vodka sauce served with capellini al Pomodoro",
+          "Crispy chicken gratin with mozzarella cheese, in Mello’s vodka sauce served with capellini al pomodoro",
         price: "25.95",
       },
       {

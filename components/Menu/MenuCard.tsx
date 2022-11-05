@@ -9,12 +9,12 @@ type MenuCardProps = {
 
 export const MenuCard = ({ data, title }: MenuCardProps) => {
   return (
-    <div className="flex flex-col pt-4">
+    <div className="flex flex-col p-4">
       <h1 className="self-center py-2 text-3xl">{title}</h1>
       {data.map((item, i) => (
         <div
           key={i}
-          className="p-2 m-4 border-b-2 border-b-hunter-green last:border-b-0"
+          className="p-4 border-b-2 border-b-hunter-green last:border-b-0"
         >
           <h1 className="text-2xl">{item.name}</h1>
           {item.description && (
