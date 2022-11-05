@@ -61,7 +61,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             odio ut, aliquam metus.
           </p>
           <motion.button
-            className="self-start p-2 ml-8 text-white rounded-md bg-equestrian-green"
+            className="self-start p-2 ml-8 tracking-wide text-white uppercase rounded-sm bg-equestrian-green"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9, opacity: 0.8 }}
             onClick={navToAboutPage}
