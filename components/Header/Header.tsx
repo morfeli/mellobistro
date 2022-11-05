@@ -8,7 +8,7 @@ import LogoSVG from "../../public/SVG/logo-army-green.svg";
 
 import { Navigation } from "./Navigation";
 
-type HeaderProps = {
+export type HeaderProps = {
   isMobile: boolean;
   navBarScrolled: boolean;
 };

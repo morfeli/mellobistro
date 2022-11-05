@@ -10,9 +10,10 @@ import { RightSVG } from "./RightSVG";
 
 type LandingHeroProps = {
   images: StaticImageData[];
+  title?: string;
 };
 
-export const LandingHero = ({ images }: LandingHeroProps) => {
+export const LandingHero = ({ images, title }: LandingHeroProps) => {
   const [index, setIndex] = useState<number>(0);
 
   function moveRight() {
@@ -61,6 +62,9 @@ export const LandingHero = ({ images }: LandingHeroProps) => {
           </div>
         );
       })}
+      <h1 className="self-end p-4 tracking-widest text-white uppercase drop-shadow-2xl text-8xl">
+        {title}
+      </h1>
       <RightSVG right={moveRight} />
     </motion.div>
   );

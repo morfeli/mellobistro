@@ -32,9 +32,9 @@ export const Hero = ({ innerWidth }: HeroProps) => {
   return (
     <section className="flex flex-col py-12">
       <div className="text-xl text-center">
-        <h1 className="pb-4 text-4xl tracking-widest uppercase">
+        <h2 className="pb-4 text-4xl tracking-widest uppercase">
           Mello Bistro
-        </h1>
+        </h2>
         <p className="pb-2">Innovative Italian Restaurant</p>
         <p>Modern Italian Cuisine With a French Twist</p>
         <div className="grid my-4 transition-all grid-cols-imageGrid justify-items-center">
@@ -49,7 +49,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
       </div>
       <div className="lg:flex lg:justify-around lg:items-baseline">
         <div className="flex flex-col lg:w-50vw lg:p-6">
-          <h1 className="self-start ml-8 text-3xl">OUR BRAND</h1>
+          <h2 className="self-start ml-8 text-3xl">OUR BRAND</h2>
           <p className="px-8 py-4 text-lg leading-7 text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non
             blandit magna, vel porta mauris. Phasellus turpis arcu, elementum ac
@@ -70,7 +70,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           </motion.button>
         </div>
         <div className="flex flex-col items-center pt-12 text-lg">
-          <h1 className="text-3xl">Hours & Location</h1>
+          <h2 className="text-3xl">Hours & Location</h2>
           <p className="py-2">1233 Bay Street Staten Island 10305 New York</p>
           <h2>Monday - Saturday</h2>
           <p>Lunch 11am - 3pm</p>

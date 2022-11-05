@@ -42,7 +42,7 @@ const About: NextPage = () => {
     <div>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <OverLay>
-        <LandingHero images={heroImageArray} />
+        <LandingHero images={heroImageArray} title="About" />
       </OverLay>
 
       <MainBackgroundImage>

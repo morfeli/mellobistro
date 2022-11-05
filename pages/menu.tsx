@@ -17,7 +17,7 @@ export interface ChildrenProps {
   children: React.ReactNode;
 }
 
-const Menus: NextPage = () => {
+const Menu: NextPage = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
   const [navBarScrolled, setNavBarScrolled] = useState<boolean>(false);
 
@@ -62,7 +62,7 @@ const Menus: NextPage = () => {
     <>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <OverLay>
-        <LandingHero images={heroImageArray} />
+        <LandingHero images={heroImageArray} title="Menu" />
       </OverLay>
 
       <MainBackgroundImage>
@@ -99,4 +99,4 @@ const Menus: NextPage = () => {
   );
 };
 
-export default Menus;
+export default Menu;

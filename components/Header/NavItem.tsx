@@ -23,6 +23,8 @@ export const NavItem = ({
       "md:mx-8": footer,
       "after:bg-white": footer,
       "text-white": footer || isMobile,
+      "w-fit": footer,
+      "mx-auto": footer,
     }
   );
 

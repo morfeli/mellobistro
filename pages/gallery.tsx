@@ -2,11 +2,8 @@ import { useState, useEffect } from "react";
 import { NextPage } from "next";
 
 import { Header } from "../components/Header/Header";
-
 import { Footer } from "../components/Footer/Footer";
-
 import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
-import heroImageArray from "../components/Home/Images";
 import { HeroGallery } from "../components/Gallery/HeroGallery";
 
 const Gallery: NextPage = () => {

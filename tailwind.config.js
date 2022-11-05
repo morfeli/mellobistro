@@ -36,6 +36,7 @@ module.exports = {
       },
       height: {
         "30vh": "30vh",
+        "75vh": "75vh",
       },
       animation: {
         slide: "slide 20s infinite",

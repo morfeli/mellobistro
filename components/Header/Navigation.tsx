@@ -6,7 +6,7 @@ export const Navigation = () => {
       <ul className="flex">
         <NavItem link="/">Home</NavItem>
         <NavItem link="/about">About</NavItem>
-        <NavItem link="/menus">Menus</NavItem>
+        <NavItem link="/menu">Menu</NavItem>
         <NavItem link="/events">Private Events</NavItem>
         <NavItem link="/gallery">Gallery</NavItem>
         <NavItem link="/contact">Contact</NavItem>

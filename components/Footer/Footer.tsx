@@ -20,7 +20,7 @@ export const Footer = ({ isMobile }: FooterProps) => {
           About
         </NavItem>
         <NavItem isMobile={isMobile} link="/menus" footer>
-          Menus
+          Menu
         </NavItem>
         <NavItem isMobile={isMobile} link="/events" footer>
           Private Events
