@@ -62,7 +62,7 @@ export const LandingHero = ({ images, title }: LandingHeroProps) => {
           </div>
         );
       })}
-      <h1 className="self-end p-2 text-5xl tracking-widest text-white uppercase drop-shadow-2xl md:text-8xl">
+      <h1 className="self-end p-1 text-5xl tracking-widest text-center text-white uppercase drop-shadow-2xl md:text-8xl">
         {title}
       </h1>
       <RightSVG right={moveRight} />

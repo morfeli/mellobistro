@@ -127,11 +127,6 @@ export const Form = () => {
   const inputContainer = classNames("m-4 flex flex-col items-center");
   const invalidMessage = classNames("text-red-600 pt-2 text-lg");
 
-  const variants = {
-    initial: { opacity: 1 },
-    animate: { x: 5, y: 5 },
-  };
-
   return (
     <>
       <form
@@ -291,7 +286,7 @@ export const Form = () => {
 
         <button
           type="submit"
-          className="px-8 py-4 text-white rounded-md bg-equestrian-green"
+          className="px-8 py-4 tracking-widest text-white uppercase rounded-md bg-equestrian-green"
         >
           Submit
         </button>

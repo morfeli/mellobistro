@@ -47,6 +47,8 @@ const Events: NextPage = () => {
       <MainBackgroundImage>
         <EventHero />
       </MainBackgroundImage>
+
+      <Footer isMobile={isMobile} />
     </>
   );
 };

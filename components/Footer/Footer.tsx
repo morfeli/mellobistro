@@ -9,17 +9,17 @@ type FooterProps = {
 export const Footer = ({ isMobile }: FooterProps) => {
   return (
     <footer className="flex flex-col items-center justify-between pb-4 text-white bg-equestrian-green">
-      <div className="mx-auto w-72 md:w-96">
+      <div className="mx-auto w-60 md:w-96">
         <Image src={LogoWordMark} alt="Logo word mark" priority />
       </div>
-      <ul className="text-center sm:flex sm:justify-between sm:w-screen sm:px-2">
+      <ul className="flex flex-col items-center text-center sm:flex-row sm:justify-between sm:w-screen sm:px-2">
         <NavItem isMobile={isMobile} link="/" footer>
           Home
         </NavItem>
         <NavItem isMobile={isMobile} link="/about" footer>
           About
         </NavItem>
-        <NavItem isMobile={isMobile} link="/menus" footer>
+        <NavItem isMobile={isMobile} link="/menu" footer>
           Menu
         </NavItem>
         <NavItem isMobile={isMobile} link="/events" footer>

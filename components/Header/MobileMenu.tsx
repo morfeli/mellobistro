@@ -36,7 +36,7 @@ export const MobileMenu = ({
             <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/about">
               About
             </NavItem>
-            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/menus">
+            <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/menu">
               Menu
             </NavItem>
             <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/events">
