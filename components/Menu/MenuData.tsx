@@ -7,12 +7,12 @@ export const MenuData = [
           "White wine steamed mussels, vine ripe tomatoes, garlic, fresh herbs, focaccia crostini",
         price: "14.95",
       },
-      {
-        name: "Carpaccio Di Manzo",
-        description:
-          "Thinly sliced beef, crispy quinoa, balsamic infused cherry tomatoes, assorted pickles, arugula, shaved parmesan",
-        price: "15.95",
-      },
+      // {
+      //   name: "Carpaccio Di Manzo",
+      //   description:
+      //     "Thinly sliced beef, crispy quinoa, balsamic infused cherry tomatoes, assorted pickles, arugula, shaved parmesan",
+      //   price: "15.95",
+      // },
       {
         name: "Tuna Tartare ",
         description:
@@ -36,17 +36,17 @@ export const MenuData = [
         description: "Tartare sauce, spicy arrabiata sauce, pickled onions",
         price: "14.95",
       },
-      {
-        name: "Mediterranea Octopus",
-        description:
-          "Grilled octopus, fingerling potato, lemon, garlic & herbs, black olive tapenade & pickles onions",
-        price: "18.95",
-      },
+      // {
+      //   name: "Mediterranea Octopus",
+      //   description:
+      //     "Grilled octopus, fingerling potato, lemon, garlic & herbs, black olive tapenade & pickles onions",
+      //   price: "18.95",
+      // },
       {
         name: "Blistered Shishito Peppers",
         description:
           "Yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
-        price: "13.95",
+        price: "14.95",
       },
       {
         name: "Di Parma Prosciutto e Melone",
@@ -78,7 +78,7 @@ export const MenuData = [
         name: "Caesar Salad",
         description:
           "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano - Grilled Chicken $6 - Shrimp $2",
-        price: "13.95",
+        price: "12.95",
       },
       {
         name: "Beet Salad",
@@ -102,7 +102,7 @@ export const MenuData = [
         name: "Caprese Salad",
         description:
           "Fresh mozzarella, tomato, basil oil, grapefruit heirloom tomato confit, balsamic reduction",
-        price: "13.95",
+        price: "12.95",
       },
     ],
 
@@ -110,35 +110,35 @@ export const MenuData = [
       {
         name: "Gnocchi Genovese",
         description: "Homemade gnocchi, mushroom-pesto cream sauce",
-        price: "15.95",
+        price: "16.95",
       },
       {
         name: "Spaghetti alla Bolognese",
         description: "Homemade traditional bolognese sauce",
-        price: "16.95",
-      },
-      {
-        name: "Lasagna alla Bolognese",
-        description:
-          "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
-        price: "23.95",
+        price: "17.95",
       },
       {
         name: "Black linguine alla Pescatora",
         description:
           "Homemade squid ink pasta, clams, mussels, shrimp, scallops, calamari, basil, fresh tomato",
-        price: "30.95",
+        price: "31.95",
       },
       {
         name: "Penne alla Vodka Mello",
         description: "Shrimp,mushrooms, peas, Mello’s vodka sauce",
         price: "18.95",
       },
+      // {
+      //   name: "Lasagna alla Bolognese",
+      //   description:
+      //     "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
+      //   price: "23.95",
+      // },
       {
         name: "Black Linguine alla Vongole",
         description:
           "Homemade squid ink pasta, clams, garlic Italian parsley, white wine",
-        price: "24.95",
+        price: "25.95",
       },
 
       {
@@ -147,11 +147,11 @@ export const MenuData = [
           "Homemade spinach fettuccine, eggplant, fresh pomodoro sauce, topped with ricotta salata",
         price: "16.95",
       },
-      {
-        name: "Ravioli di Granchio",
-        description: "Homemade crab ravioli with shrimp bisque sauce",
-        price: "19.95",
-      },
+      // {
+      //   name: "Ravioli di Granchio",
+      //   description: "Homemade crab ravioli with shrimp bisque sauce",
+      //   price: "19.95",
+      // },
       {
         name: "Capellini al Portobello",
         description:
@@ -161,7 +161,7 @@ export const MenuData = [
       {
         name: "Risotto Dolce Vita",
         description: "Shrimp, mushrooms, spinach, goat cheese",
-        price: "26.95",
+        price: "27.00",
       },
     ],
     pesce: [
@@ -169,57 +169,57 @@ export const MenuData = [
         name: "Pepper Crusted Tuna",
         description:
           "3 color peppercorn crusted tuna steak, braised endive, arugula, caramelized onion, confit grape tomatoes, beurre blanc",
-        price: "34.95",
+        price: "35.95",
       },
       {
         name: "Branzino Mediterraneo",
         description:
           "Grilled butterflied whole Branzino, rosemary roasted fingerling potatoes, rainbow carrots, lemon truffle oil, dehydrated olive crumble",
-        price: "36.95",
+        price: "37.95",
       },
       {
         name: "Pecan crusted Salmon",
         description:
           "Lemon pecan crust, potato puree, rainbow carrots, citrus emulsion",
-        price: "33.95",
+        price: "34.95",
       },
       {
         name: "Sesame Crusted Tuna",
         description:
           "Toasted sesame crust, vegetable-ginger stir fried quinoa, teriyaki reduction",
-        price: "33.95",
+        price: "34.95",
       },
       {
         name: "Sole alla Francese Amandine",
         description:
           "Filet of sole with lemon-caper cream sauce, potato puree, sautéed spinach, roasted almonds",
-        price: "28.95",
+        price: "29.95",
       },
       {
         name: "Blackened Salmon",
         description:
           "Blackened salmon, caramelized onions, vegetables- ginger stir fried quinoa, teriyaki reduction",
-        price: "32.95",
+        price: "33.95",
       },
     ],
     pollo: [
       {
-        name: "Pollo al Balsamic",
+        name: "Coq au Vin",
         description:
-          "Chicken breast, spinach, prosciutto, smoked mozzarella, balsamic reduction, potato puree.",
-        price: "24.95",
+          "Red wine braised chicken legs, bacon lardons, button mushrooms, pearl onions, creamy polenta",
+        price: "27.95",
       },
       {
         name: "Blackened Chicken",
         description:
           "Pan seared blackened chicken breast,vegetable-ginger stir fried quinoa, teriyaki reduction, mandarin chutney, roasted almonds",
-        price: "24.95",
+        price: "25.95",
       },
       {
         name: "Chicken Parma vodka sauce",
         description:
           "Crispy chicken gratin with mozzarella cheese, in Mello’s vodka sauce served with capellini al pomodoro",
-        price: "25.95",
+        price: "26.95",
       },
       {
         name: "Grilled Pollo Paillard",
@@ -227,19 +227,13 @@ export const MenuData = [
           "Thinly pounded chicken breast served with arugula, grape tomatoes, grilled portobello, avocado, truffle lemon dressing, balsamic reduction",
         price: "23.95",
       },
-      {
-        name: "Conq au Vin",
-        description:
-          "Red wine braised chicken legs, bacon lardons, button mushrooms, pearl onions, creamy polenta",
-        price: "25.95",
-      },
     ],
     carni: [
       {
         name: "Picanha steak au poivre",
         description:
           "Grilled picanha steak, peppercorn-cognac cream sauce, baroa potato puree, pico de gallo, bacon farofa “panko”, crispy yucca",
-        price: "35.95",
+        price: "39.95",
       },
       {
         name: "Stuffed pork chop al Dijon",
@@ -251,7 +245,7 @@ export const MenuData = [
         name: "Red Wine Braised Short Ribs",
         description:
           "Fall off the bone ribs, roasted fingerling potatoes, rainbow carrots & red wine beef jus",
-        price: "39.95",
+        price: "41.95",
       },
     ],
     speciality: [
@@ -259,7 +253,7 @@ export const MenuData = [
         name: "Bistro Burger",
         description:
           "10oz Angus burger, thick cut bacon, caramelized onion, aged Comté cheese, arugula, tomato, remoulade sauce, toasted brioche, truffle parmesan fries",
-        price: "18.95",
+        price: "16.95",
       },
       {
         name: "Vegan Burger",

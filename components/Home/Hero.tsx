@@ -71,7 +71,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
         </div>
         <div className="flex flex-col items-center pt-12 text-lg">
           <h2 className="text-3xl">Hours & Location</h2>
-          <p className="py-2">1233 Bay Street Staten Island 10305 New York</p>
+          <p className="py-2">1233 Bay Street Staten Island New York 10305</p>
           <h2>Monday - Saturday</h2>
           <p>Lunch 11am - 3pm</p>
           <p>Dinner 5pm - 10:30pm</p>
