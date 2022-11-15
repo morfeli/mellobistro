@@ -222,9 +222,9 @@ export const MenuData = [
     ],
     carni: [
       {
-        name: "Picanha steak au poivre",
+        name: "NY Strip Au Poivre",
         description:
-          "Grilled picanha steak, peppercorn-cognac cream sauce, baroa potato puree, pico de gallo, bacon farofa “panko”, crispy yucca",
+          "Grilled NY steak, peppercorn-cognac cream sauce and risotto al funghi and truffle oil",
         price: "39.95",
       },
       {
@@ -258,6 +258,12 @@ export const MenuData = [
         description:
           "Grilled chicken, Mushrooms, sun dried tomato spinach, pesto sauce",
         price: "16.95",
+      },
+      {
+        name: "Lasagna Bolognese",
+        description:
+          "Bolognese, riccotta, bechamel, tomato sauce, mozzarella and parmsean cheese",
+        price: "23.95",
       },
       {
         name: "The Cheese Board",
