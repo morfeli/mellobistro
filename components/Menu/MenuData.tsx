@@ -280,11 +280,6 @@ export const MenuData = [
         price: "10.00",
       },
       {
-        name: "Tiramisu",
-        description: "Classic italian tiramisu",
-        price: "10.00",
-      },
-      {
         name: "NY Cheesecake",
         description:
           "Classic cheese cake, graham cracker crust, homemade caramel",
@@ -308,17 +303,27 @@ export const MenuData = [
       },
       {
         name: "Chocolate tartufo",
-        description: "Chocolate pistachio ice cream",
+
         price: "10.00",
       },
       {
-        name: "Vegan GF Apple Crisp",
-        description: "Dairy free caramel, vanilla ice cream",
+        name: "Classic Italian Tiramisu",
+
         price: "10.00",
       },
       {
-        name: "Sorbet Selection",
-        description: "Coconut, lemon, mixed berry",
+        name: "Chocolate Pistachio Ice Cream",
+
+        price: "10.00",
+      },
+      {
+        name: "Dairy Free Caramel and Vanilla Ice Cream",
+
+        price: "10.00",
+      },
+
+      {
+        name: "Coconut Sorbet",
         price: "10.00",
       },
     ],
