@@ -60,12 +60,7 @@ export const MenuData = [
           "Gratin & stuffed portobello with ricotta, artichokes, spinach, roasted red pepper-tarragon coulis",
         price: "14.95",
       },
-      {
-        name: "Tuna Nicoise",
-        description:
-          "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
-        price: "App $17.95 - Main Course $27.95",
-      },
+
       {
         name: "Soup of the Day",
         description:
@@ -79,6 +74,12 @@ export const MenuData = [
         description:
           "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano - Grilled Chicken $6 - Shrimp $2",
         price: "12.95",
+      },
+      {
+        name: "Tuna Nicoise",
+        description:
+          "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
+        price: "App $17.95 - Main Course $27.95",
       },
       {
         name: "Beet Salad",
@@ -101,7 +102,7 @@ export const MenuData = [
       {
         name: "Caprese Salad",
         description:
-          "Fresh mozzarella, tomato, basil oil, grapefruit heirloom tomato confit, balsamic reduction",
+          "Fresh mozzarella, tomato, basil oil, heirloom grape tomato confit, balsamic reduction",
         price: "12.95",
       },
     ],
@@ -128,12 +129,7 @@ export const MenuData = [
         description: "Shrimp,mushrooms, peas, Mello’s vodka sauce",
         price: "18.95",
       },
-      // {
-      //   name: "Lasagna alla Bolognese",
-      //   description:
-      //     "Bolognese, tomato sauce, bechamel, ricotta, parmesan & mozzarella cheese",
-      //   price: "23.95",
-      // },
+
       {
         name: "Black Linguine alla Vongole",
         description:
@@ -147,11 +143,7 @@ export const MenuData = [
           "Homemade spinach fettuccine, eggplant, fresh pomodoro sauce, topped with ricotta salata",
         price: "16.95",
       },
-      // {
-      //   name: "Ravioli di Granchio",
-      //   description: "Homemade crab ravioli with shrimp bisque sauce",
-      //   price: "19.95",
-      // },
+
       {
         name: "Capellini al Portobello",
         description:
