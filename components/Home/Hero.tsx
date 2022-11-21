@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-import imageOne from "../../public/assets/mockup-mellobistro.jpg";
-import imageTwo from "../../public/assets/mockup2-mellobistro.jpg";
-import imageThree from "../../public/assets/mockup3-mellobistro.jpg";
+import imageOne from "../../public/landing/landing-1.jpg";
+import imageTwo from "../../public/landing/landing-2.jpg";
+import imageThree from "../../public/landing/landing-3.jpg";
 import { HeroImages } from "./HeroImages";
 import { Map } from "./Map";
 
@@ -11,19 +11,20 @@ type HeroProps = {
   innerWidth: number;
 };
 
+const imageArray = [
+  {
+    id: 0,
+    image: imageOne,
+  },
+  { id: 1, image: imageTwo },
+  {
+    id: 2,
+    image: imageThree,
+  },
+];
+
 export const Hero = ({ innerWidth }: HeroProps) => {
   const router = useRouter();
-  const imageArray = [
-    {
-      id: 0,
-      image: imageOne,
-    },
-    { id: 1, image: imageTwo },
-    {
-      id: 2,
-      image: imageThree,
-    },
-  ];
 
   const navToAboutPage = () => {
     router.push("/about");

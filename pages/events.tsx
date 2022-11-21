@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NextPage } from "next";
 
-import heroImageArray from "../components/Home/Images";
+import { heroImageArray } from "../components/Home/Images";
 
 import { Header } from "../components/Header/Header";
 import { OverLay } from "../components/UI/OverLay";

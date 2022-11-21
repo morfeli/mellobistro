@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { Modal } from "../Modal/Modal";
-import heroImageArray from "../Home/Images";
+import { heroImageArray } from "../Home/Images";
 
 export const HeroGallery = () => {
   const [renderModal, setRenderModal] = useState<{

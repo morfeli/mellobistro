@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 
-import heroImageArray from "./Images";
 import classNames from "classnames";
 import { LeftSVG } from "./LeftSVG";
 import { RightSVG } from "./RightSVG";
 
 type LandingHeroProps = {
   images: StaticImageData[];
+
   title?: string;
 };
 
@@ -17,16 +17,16 @@ export const LandingHero = ({ images, title }: LandingHeroProps) => {
   const [index, setIndex] = useState<number>(0);
 
   function moveRight() {
-    setIndex((current) => (current === 4 ? 0 : current + 1));
+    setIndex((current) => (current === images.length ? 0 : current + 1));
   }
 
   function moveLeft() {
-    setIndex((current) => (current === 0 ? 4 : current - 1));
+    setIndex((current) => (current === 0 ? images.length : current - 1));
   }
 
   useEffect(() => {
     const id = setInterval((): void => {
-      setIndex((index + 1) % heroImageArray.length); //
+      setIndex((index + 1) % images.length); //
     }, 5000);
 
     return () => {
@@ -56,7 +56,7 @@ export const LandingHero = ({ images, title }: LandingHeroProps) => {
               src={image}
               layout="fill"
               objectFit="cover"
-              objectPosition="center"
+              objectPosition={i === 0 ? "center top" : "center"}
               alt="Hero Images"
             />
           </div>

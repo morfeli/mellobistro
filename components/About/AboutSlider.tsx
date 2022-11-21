@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import classNames from "classnames";
-import heroImageArray from "../Home/Images";
+import { aboutSliderImages } from "../Home/Images";
 
 export const AboutSlider = () => {
   const [index, setIndex] = useState(0);
@@ -10,13 +10,13 @@ export const AboutSlider = () => {
     const interval = setTimeout(
       () =>
         setIndex((current) =>
-          current === heroImageArray.length - 1 ? 0 : current + 1
+          current === aboutSliderImages.length - 1 ? 0 : current + 1
         ),
       6000
     );
 
     return () => clearInterval(interval);
-  }, [index, heroImageArray]);
+  }, [index, aboutSliderImages]);
 
   return (
     <div className="pt-8 m-4">
@@ -26,13 +26,13 @@ export const AboutSlider = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className="whitespace-nowrap"
         >
-          {heroImageArray.map((image, i) => (
+          {aboutSliderImages.map((image, i) => (
             <Image
               key={i}
               src={image}
               alt="Mello Bistro Ownership"
-              width={500}
-              height={500}
+              width={600}
+              height={650}
               className="inline-block m-2 rounded-3xl"
               priority
             />
@@ -40,7 +40,7 @@ export const AboutSlider = () => {
         </motion.div>
       </div>
       <div className="flex justify-center pt-4">
-        {heroImageArray.map((dot, idx) => (
+        {aboutSliderImages.map((dot, idx) => (
           <div
             onClick={() => {
               setIndex(idx);

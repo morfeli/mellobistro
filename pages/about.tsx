@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer/Footer";
 
 import { OverLay } from "../components/UI/OverLay";
 import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
-import heroImageArray from "../components/Home/Images";
+import { aboutHeroImageArray } from "../components/Home/Images";
 
 const About: NextPage = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
@@ -42,7 +42,7 @@ const About: NextPage = () => {
     <div>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <OverLay>
-        <LandingHero images={heroImageArray} title="About" />
+        <LandingHero images={aboutHeroImageArray} title="About" />
       </OverLay>
 
       <MainBackgroundImage>

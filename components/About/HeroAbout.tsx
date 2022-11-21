@@ -1,15 +1,8 @@
 import { useRouter } from "next/router";
 
 import { AboutSlider } from "./AboutSlider";
-import { motion } from "framer-motion";
-import { EmailSVG } from "./EmailSVG";
 
 export const HeroAbout = () => {
-  const router = useRouter();
-
-  const navToContactPage = () => {
-    router.push("/contact");
-  };
   return (
     <section className="flex flex-col py-8">
       <h2 className="self-center text-4xl">OUR STORY</h2>

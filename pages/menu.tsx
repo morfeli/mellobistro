@@ -7,7 +7,7 @@ import { OverLay } from "../components/UI/OverLay";
 import { LandingHero } from "../components/Home/LandingHero";
 import { Footer } from "../components/Footer/Footer";
 
-import heroImageArray from "../components/Home/Images";
+import { heroImageArray } from "../components/Home/Images";
 import { MenuData } from "../components/Menu/MenuData";
 import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
 import { MenuCards } from "../components/Menu/MenuCards";
