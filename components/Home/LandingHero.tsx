@@ -17,11 +17,11 @@ export const LandingHero = ({ images, title }: LandingHeroProps) => {
   const [index, setIndex] = useState<number>(0);
 
   function moveRight() {
-    setIndex((current) => (current === images.length ? 0 : current + 1));
+    setIndex((current) => (current === images.length - 1 ? 0 : current + 1));
   }
 
   function moveLeft() {
-    setIndex((current) => (current === 0 ? images.length : current - 1));
+    setIndex((current) => (current === 0 ? images.length - 1 : current - 1));
   }
 
   useEffect(() => {
