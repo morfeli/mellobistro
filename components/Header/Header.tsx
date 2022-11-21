@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import { MobileMenuBtn } from "./MobileMenuBtn";
 import { MobileMenu } from "./MobileMenu";
@@ -31,7 +32,9 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         transition={{ delay: 1 }}
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
-        <Image src={LogoSVG} alt="logo" width={100} />
+        <Link href="/">
+          <Image src={LogoSVG} alt="logo" width={100} />
+        </Link>
         <div className="flex items-center justify-between">
           {isMobile && (
             <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
@@ -48,7 +51,14 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         transition={{ delay: 2 }}
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
-        <Image src={LogoSVG} alt="logo" width={150} />
+        <Link href="/">
+          <Image
+            src={LogoSVG}
+            alt="logo"
+            width={150}
+            className="cursor-pointer"
+          />
+        </Link>
         <div className="flex items-center justify-between">
           <Navigation />
         </div>
