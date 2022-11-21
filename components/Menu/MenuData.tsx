@@ -1,23 +1,24 @@
 export const MenuData = [
   {
-    apps: [
+    antipasta: [
       {
         name: "Padellata Di Cozze al Provencal",
         description:
           "White wine steamed mussels, vine ripe tomatoes, garlic, fresh herbs, focaccia crostini",
         price: "14.95",
       },
-      // {
-      //   name: "Carpaccio Di Manzo",
-      //   description:
-      //     "Thinly sliced beef, crispy quinoa, balsamic infused cherry tomatoes, assorted pickles, arugula, shaved parmesan",
-      //   price: "15.95",
-      // },
+
       {
         name: "Tuna Tartare ",
         description:
           "Avocado mousse, shiracha aioli, capers, ginger, pickle onions",
         price: "16.95",
+      },
+      {
+        name: "Di Parma Prosciutto e Melone",
+        description:
+          "Ripe Cantaloupe wrapped with prosciutto di parma, figs, arugula, shaved parmesan, port wine reduction",
+        price: "14.95",
       },
       {
         name: "Legumes Grille",
@@ -36,55 +37,24 @@ export const MenuData = [
         description: "Tartare sauce, spicy arrabiata sauce, pickled onions",
         price: "14.95",
       },
-      // {
-      //   name: "Mediterranea Octopus",
-      //   description:
-      //     "Grilled octopus, fingerling potato, lemon, garlic & herbs, black olive tapenade & pickles onions",
-      //   price: "18.95",
-      // },
-      {
-        name: "Blistered Shishito Peppers",
-        description:
-          "Yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
-        price: "14.95",
-      },
-      {
-        name: "Di Parma Prosciutto e Melone",
-        description:
-          "Ripe Cantaloupe wrapped with prosciutto di parma, figs, arugula, shaved parmesan, port wine reduction",
-        price: "14.95",
-      },
       {
         name: "Portobello ripieni",
         description:
           "Gratin & stuffed portobello with ricotta, artichokes, spinach, roasted red pepper-tarragon coulis",
         price: "14.95",
       },
-
       {
-        name: "Soup of the Day",
+        name: "Blistered Shishito Peppers",
         description:
-          "Ask your server for more details regarding the soup of the day",
-        price: "10.00",
+          "Yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
+        price: "14.95",
       },
     ],
     salads: [
       {
-        name: "Caesar Salad",
+        name: "Caprese Salad",
         description:
-          "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano - Grilled Chicken $6 - Shrimp $2",
-        price: "12.95",
-      },
-      {
-        name: "Tuna Nicoise",
-        description:
-          "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
-        price: "App $17.95 - Main Course $27.95",
-      },
-      {
-        name: "Beet Salad",
-        description:
-          "Goat cheese spread, roasted almonds, belgium endive, New York sliced apple, shallot confit-lemon dressing",
+          "Fresh mozzarella, tomato, basil oil, heirloom grape tomato confit, balsamic reduction",
         price: "13.95",
       },
       {
@@ -94,16 +64,28 @@ export const MenuData = [
         price: "13.95",
       },
       {
+        name: "Caesar Salad",
+        description:
+          "Creamy Caesar dressing, garlic croutons, Parmigiano Reggiano - Grilled Chicken $6 - Shrimp $2",
+        price: "12.95",
+      },
+      {
+        name: "Beet Salad",
+        description:
+          "Goat cheese spread, roasted almonds, belgium endive, New York sliced apple, shallot confit-lemon dressing",
+        price: "13.95",
+      },
+      {
         name: "Endive Caprini Salad",
         description:
           "Julienne endive, New York apples & pecans, shallot confit-Lemon vinaigrette, balsamic reduction, goat cheese crumble",
         price: "14.95",
       },
       {
-        name: "Caprese Salad",
+        name: "Tuna Nicoise",
         description:
-          "Fresh mozzarella, tomato, basil oil, heirloom grape tomato confit, balsamic reduction",
-        price: "12.95",
+          "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
+        price: "App $17.95 - Main Course $27.95",
       },
     ],
 
@@ -112,11 +94,6 @@ export const MenuData = [
         name: "Gnocchi Genovese",
         description: "Homemade gnocchi, mushroom-pesto cream sauce",
         price: "16.95",
-      },
-      {
-        name: "Spaghetti alla Bolognese",
-        description: "Homemade traditional bolognese sauce",
-        price: "17.95",
       },
       {
         name: "Black linguine alla Pescatora",
@@ -129,7 +106,6 @@ export const MenuData = [
         description: "Shrimp,mushrooms, peas, Mello’s vodka sauce",
         price: "18.95",
       },
-
       {
         name: "Black Linguine alla Vongole",
         description:
@@ -145,15 +121,22 @@ export const MenuData = [
       },
 
       {
-        name: "Capellini al Portobello",
-        description:
-          "Portobello, sun dried tomatoes, arugula, garlic & a touch of pesto",
-        price: "15.95",
+        name: "Spaghetti alla Bolognese",
+        description: "Homemade traditional bolognese sauce",
+        price: "17.95",
       },
+
       {
         name: "Risotto Dolce Vita",
         description: "Shrimp, mushrooms, spinach, goat cheese",
         price: "27.00",
+      },
+
+      {
+        name: "Capellini al Portobello",
+        description:
+          "Portobello, sun dried tomatoes, arugula, garlic & a touch of pesto",
+        price: "15.95",
       },
     ],
     pesce: [

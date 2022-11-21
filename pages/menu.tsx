@@ -46,7 +46,7 @@ const Menu: NextPage = () => {
   }, [isMobile]);
 
   const {
-    apps,
+    antipasta,
     carni,
     kids,
     pasta,
@@ -78,7 +78,7 @@ const Menu: NextPage = () => {
         <p></p>
         <MenuCards>
           <div className="md:w-50vw">
-            <MenuCard data={apps} title="Appetizers" />
+            <MenuCard data={antipasta} title="Antipasta" />
             <MenuCard data={salads} title="Salads" />
             <MenuCard data={pasta} title="Pasta" />
             <MenuCard data={carni} title="Carni" />
