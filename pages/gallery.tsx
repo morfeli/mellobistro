@@ -5,6 +5,7 @@ import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
 import { MainBackgroundImage } from "../components/UI/MainBackgroundImage";
 import { HeroGallery } from "../components/Gallery/HeroGallery";
+import classNames from "classnames";
 
 const Gallery: NextPage = () => {
   const [innerWidth, setInnerWidth] = useState<number>(0);
@@ -35,15 +36,19 @@ const Gallery: NextPage = () => {
   }, [isMobile]);
 
   return (
-    <>
+    <div
+      className={classNames("flex flex-col justify-between", {
+        "h-screen": !isMobile,
+      })}
+    >
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
 
-      <MainBackgroundImage>
-        <HeroGallery />
+      <MainBackgroundImage isMobile={isMobile}>
+        <HeroGallery isMobile={isMobile} />
       </MainBackgroundImage>
 
       <Footer isMobile={isMobile} />
-    </>
+    </div>
   );
 };
 

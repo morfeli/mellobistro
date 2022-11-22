@@ -1,5 +1,22 @@
 import { ChildrenProps } from "../../pages";
+import classNames from "classnames";
 
-export const MainBackgroundImage = ({ children }: ChildrenProps) => {
-  return <main className="overflow-hidden bg-wallpaper">{children}</main>;
+type MainBackgroundImageProps = {
+  children: React.ReactNode;
+  isMobile?: boolean;
+};
+
+export const MainBackgroundImage = ({
+  children,
+  isMobile,
+}: MainBackgroundImageProps) => {
+  return (
+    <main
+      className={classNames("overflow-hidden bg-wallpaper", {
+        "overflow-y-scroll": !isMobile,
+      })}
+    >
+      {children}
+    </main>
+  );
 };

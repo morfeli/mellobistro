@@ -1,11 +1,16 @@
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import classNames from "classnames";
 
 import { Modal } from "../Modal/Modal";
 import { heroImageArray } from "../Home/Images";
 
-export const HeroGallery = () => {
+type HeroGalleryProps = {
+  isMobile: boolean;
+};
+
+export const HeroGallery = ({ isMobile }: HeroGalleryProps) => {
   const [renderModal, setRenderModal] = useState<{
     show: boolean;
     item: StaticImageData | null;
@@ -26,7 +31,11 @@ export const HeroGallery = () => {
   }
 
   return (
-    <section className="flex flex-col pt-20">
+    <section
+      className={classNames("flex flex-col pt-20", {
+        "h-screen": !isMobile,
+      })}
+    >
       <h2 className="self-center text-3xl">Gallery</h2>
       <motion.div
         className="grid gap-8 py-12 m-4 grid-cols-galleryGrid justify-items-center"

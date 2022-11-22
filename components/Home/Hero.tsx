@@ -79,14 +79,16 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             Learn More
           </motion.button>
         </div>
-        <div className="flex flex-col items-center pt-12 text-lg">
+        <div className="flex flex-col items-center pt-12">
           <h2 className="text-3xl">Hours & Location</h2>
-          <p className="py-2">1233 Bay Street, Staten Island, NY 10305</p>
-          <h2>Monday - Wednesday</h2>
+          <p className="py-2 text-xl">
+            1233 Bay Street, Staten Island, NY 10305
+          </p>
+          <h2 className="text-lg">Monday - Wednesday</h2>
           <p>5:00pm - 11:00pm</p>
           <p>Thursday - Saturday</p>
-          <h2>1:00 - 11:00pm</h2>
-          <p>Sunday</p>
+          <h2 className="text-lg">1:00 - 11:00pm</h2>
+          <p className="text-lg">Sunday</p>
           <p>11:00pm - 10:00pm</p>
 
           <p className="pb-4">718.285.4574</p>
