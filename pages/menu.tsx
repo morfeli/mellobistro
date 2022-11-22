@@ -66,16 +66,6 @@ const Menu: NextPage = () => {
       </OverLay>
 
       <MainBackgroundImage>
-        <h1 className="pt-8 text-2xl text-center">3 Course Menu Special</h1>
-        <p className="p-4 text-lg leading-8 text-center md:px-20 md:leading-10 md:text-xl lg:px-32">
-          Join us from Monday - Friday durning the hours of 11am - 3pm for a 3
-          course menu special starting at $28.95. Includes an appetizer, main
-          course, dessert, coffee or tea. We frequently update our 3 course menu
-          to provide a varity of healthy options. Feel free to call us in
-          advance to learn more about what we are offering.
-        </p>
-
-        <p></p>
         <MenuCards>
           <div className="md:w-50vw">
             <MenuCard data={antipasta} title="Antipasta" />
