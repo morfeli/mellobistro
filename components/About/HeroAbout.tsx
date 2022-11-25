@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 import { AboutSlider } from "./AboutSlider";
 
 export const HeroAbout = () => {

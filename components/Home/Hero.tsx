@@ -85,11 +85,11 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             1233 Bay Street, Staten Island, NY 10305
           </p>
           <h2 className="text-lg">Monday - Wednesday</h2>
-          <p>5:00pm - 11:00pm</p>
-          <p>Thursday - Saturday</p>
-          <h2 className="text-lg">1:00 - 11:00pm</h2>
-          <p className="text-lg">Sunday</p>
-          <p>11:00pm - 10:00pm</p>
+          <p>5:00pm - 10:00pm</p>
+          <h2 className="text-lg">Thursday - Saturday</h2>
+          <p>1:00pm - 11:00pm</p>
+          <h2 className="text-lg">Sunday</h2>
+          <p>11:00am - 10:00pm</p>
 
           <p className="pb-4">718.285.4574</p>
           <Map />
