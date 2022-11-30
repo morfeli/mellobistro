@@ -6,7 +6,7 @@ export const EventHero = () => {
 
   return (
     <section className="flex flex-col items-center p-12 justify-evenly sm:h-75vh">
-      <div className="pb-8 text-xl text-center sm:px-80">
+      <div className="pb-8 text-xl text-center sm:px-28 lg:px-60">
         <p>
           Mello Bistro extends its services by turning its dining room and patio
           into your private event space. We do everything from small groups to
