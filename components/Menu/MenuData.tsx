@@ -21,10 +21,10 @@ export const MenuData = [
         price: "14.95",
       },
       {
-        name: "Legumes Grille",
+        name: "Mediterrean Octopus",
         description:
-          "Freshly grilled zucchini, portobello mushroom, red peppers, endives, yellow squash, grape tomato, eggplant, balsamic & EVOO served on a sizzling hot cast iron skillet",
-        price: "14.95",
+          "Grilled octopus, fingerling potato, lemon basil, truffle oil, black olive tapenade & pickles onions",
+        price: "19.95",
       },
       {
         name: "Mello’s Crab Cakes",
@@ -44,10 +44,10 @@ export const MenuData = [
         price: "14.95",
       },
       {
-        name: "Blistered Shishito Peppers",
+        name: "Antipasta Freddi",
         description:
-          "Yuzu, sesame & sriracha aioli, served on a sizzling hot cast iron skillet",
-        price: "14.95",
+          "Grilled vegetables, fresh mozzarella, shaved parmesan, proscuitto, marinated artichokes basil oil & balsamic reduction",
+        price: "21.95",
       },
     ],
     salads: [
@@ -58,9 +58,9 @@ export const MenuData = [
         price: "13.95",
       },
       {
-        name: "Quinoa Rainbow Carrot Salad",
+        name: "Mediterranean Quinoa",
         description:
-          "Roasted Heirloom carrots, quinoa, arugula, shaved carrots, pistachio, orange-carrot vinaigrette",
+          "Quinoa, roasted eggplant, grape tomato, mixed greens, kalamata olives, feta cheese and basil balsamic dressing",
         price: "13.95",
       },
       {
@@ -82,34 +82,39 @@ export const MenuData = [
         price: "14.95",
       },
       {
-        name: "Tuna Nicoise",
+        name: "Panzanella Salad",
         description:
-          "Fresh lightly seared tuna, marinated fingerling potatoes, grape tomatoes, green beans, eggs, nicoise olives, shallot lemon-confit vinaigrette",
-        price: "App $17.95 - Main Course $27.95",
+          "Mixed greens, tomatoes, capers, black olives, red onions, bread style croutons, balsamic basil dressing",
+        price: "13.95",
       },
     ],
 
     pasta: [
+      {
+        name: "Spaghetti con Gamberoni",
+        description:
+          "Shrimp, mushroom, broccoli rabe, subdried tomato, garlic and oil, truffle oul",
+        price: "17.95",
+      },
       {
         name: "Gnocchi Genovese",
         description: "Homemade gnocchi, mushroom-pesto cream sauce",
         price: "16.95",
       },
       {
-        name: "Black linguine alla Pescatora",
+        name: "Black linguine del Pescatora",
         description:
           "Homemade squid ink pasta, clams, mussels, shrimp, scallops, calamari, basil, fresh tomato",
         price: "31.95",
       },
       {
         name: "Penne alla Vodka Mello",
-        description: "Shrimp,mushrooms, peas, Mello’s vodka sauce",
+        description: "Shrimp, mushrooms, peas & Mello's vodka sauce",
         price: "18.95",
       },
       {
-        name: "Black Linguine alla Vongole",
-        description:
-          "Homemade squid ink pasta, clams, garlic Italian parsley, white wine",
+        name: "Linguine alla Vongole",
+        description: "Linguine, claims, garlic, italian parsely, white wine",
         price: "25.95",
       },
 
@@ -136,6 +141,12 @@ export const MenuData = [
         name: "Capellini al Portobello",
         description:
           "Portobello, sun dried tomatoes, arugula, garlic & a touch of pesto",
+        price: "15.95",
+      },
+      {
+        name: "Penne al Arrabbiata",
+        description:
+          "Penne, garlic, red pepper flakes, basil & parsley tomato sauce",
         price: "15.95",
       },
     ],
@@ -202,12 +213,18 @@ export const MenuData = [
           "Thinly pounded chicken breast served with arugula, grape tomatoes, grilled portobello, avocado, truffle lemon dressing, balsamic reduction",
         price: "23.95",
       },
+      {
+        name: "Pollo al Balsamic",
+        description:
+          "Chicken breast, spinach, prosciutto, smoked mozzarella, demi balsamic reduction",
+        price: "25.95",
+      },
     ],
     carni: [
       {
-        name: "NY Strip Au Poivre",
+        name: "Ribeye Steak au Poivre",
         description:
-          "Grilled NY steak, peppercorn-cognac cream sauce and risotto al funghi and truffle oil",
+          "16oz grilled ribeye steak, peppercorn cognac cream sauce & risotto al funghi and truffle oil",
         price: "39.95",
       },
       {
@@ -247,12 +264,6 @@ export const MenuData = [
         description:
           "Bolognese, riccotta, bechamel, tomato sauce, mozzarella and parmsean cheese",
         price: "23.95",
-      },
-      {
-        name: "The Cheese Board",
-        description:
-          "An assortment of cured meats and cheese with figs, apricot jam, olives, fruits, nuts & crostine",
-        price: "27.95",
       },
     ],
     desserts: [
@@ -313,9 +324,8 @@ export const MenuData = [
     sides: [
       { name: "Sautéed broccoli di rabe", price: "8.95" },
       { name: "Sautéed mushrooms", price: "7.95" },
-      { name: "Potato puree", price: "7.95" },
       { name: "Parmesan truffle french fries", price: "7.95" },
-      { name: "Braised rainbow carrots", price: "7.95" },
+      { name: "Roasted rainbow carrots", price: "7.95" },
     ],
     kids: [
       { name: "Chicken fingers with french fries", price: "13.95" },
