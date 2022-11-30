@@ -4,13 +4,9 @@ import { motion } from "framer-motion";
 import classNames from "classnames";
 
 import { Modal } from "../Modal/Modal";
-import { heroImageArray } from "../Home/Images";
+import { galleryImageArray } from "../Home/Images";
 
-type HeroGalleryProps = {
-  isMobile: boolean;
-};
-
-export const HeroGallery = ({ isMobile }: HeroGalleryProps) => {
+export const HeroGallery = () => {
   const [renderModal, setRenderModal] = useState<{
     show: boolean;
     item: StaticImageData | null;
@@ -31,17 +27,13 @@ export const HeroGallery = ({ isMobile }: HeroGalleryProps) => {
   }
 
   return (
-    <section
-      className={classNames("flex flex-col pt-20", {
-        "h-screen": !isMobile,
-      })}
-    >
+    <section className={classNames("flex flex-col pt-20")}>
       <h2 className="self-center text-3xl">Gallery</h2>
       <motion.div
         className="grid gap-8 py-12 m-4 grid-cols-galleryGrid justify-items-center"
         layout
       >
-        {heroImageArray.map((item, i) => (
+        {galleryImageArray.map((item, i) => (
           <motion.div
             key={i}
             className="cursor-pointer"
@@ -65,7 +57,7 @@ export const HeroGallery = ({ isMobile }: HeroGalleryProps) => {
               src={item}
               width={350}
               height={350}
-              className="m-4 rounded-3xl"
+              className="m-4 rounded-md"
               alt="Image"
             />
           </motion.div>

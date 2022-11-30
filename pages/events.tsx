@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { NextPage } from "next";
 
-import { heroImageArray } from "../components/Home/Images";
+import { privateImageArray } from "../components/Home/Images";
 
 import { Header } from "../components/Header/Header";
 import { OverLay } from "../components/UI/OverLay";
@@ -41,7 +41,7 @@ const Events: NextPage = () => {
     <>
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
       <OverLay>
-        <LandingHero images={heroImageArray} title="Private Events" />
+        <LandingHero images={privateImageArray} title="Private Events" />
       </OverLay>
 
       <MainBackgroundImage>

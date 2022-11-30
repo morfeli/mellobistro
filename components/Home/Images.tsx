@@ -20,6 +20,21 @@ import slider9 from "../../public/about/Tezza-0900.jpeg";
 import slider10 from "../../public/about/MELLO OPENING_-157.jpeg";
 import slider11 from "../../public/about/MELLO OPENING_-18.jpeg";
 
+import private2 from "../../public/dining-room/image2.jpg";
+import private3 from "../../public/dining-room/image3.jpg";
+import private4 from "../../public/dining-room/image4.jpg";
+import private5 from "../../public/dining-room/image5.jpg";
+
+import gallery1 from "../../public/gallery/image1.jpg";
+import gallery2 from "../../public/gallery/image2.jpg";
+import gallery3 from "../../public/gallery/image3.jpg";
+import gallery4 from "../../public/gallery/image4.jpg";
+import gallery5 from "../../public/gallery/image5.jpg";
+import gallery6 from "../../public/gallery/image6.jpg";
+import gallery7 from "../../public/gallery/image7.jpg";
+import gallery8 from "../../public/gallery/image8.jpg";
+import gallery9 from "../../public/gallery/image9.jpg";
+
 export const heroImageArray = [image2, image1, image4, slider1, image5];
 
 export const aboutHeroImageArray = [
@@ -39,4 +54,18 @@ export const aboutSliderImages = [
   slider11,
   slider10,
   about1,
+];
+
+export const privateImageArray = [private2, private3, private4, private5];
+
+export const galleryImageArray = [
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
+  gallery9,
 ];

@@ -43,8 +43,8 @@ const Gallery: NextPage = () => {
     >
       <Header isMobile={isMobile} navBarScrolled={navBarScrolled} />
 
-      <MainBackgroundImage isMobile={isMobile}>
-        <HeroGallery isMobile={isMobile} />
+      <MainBackgroundImage>
+        <HeroGallery />
       </MainBackgroundImage>
 
       <Footer isMobile={isMobile} />
