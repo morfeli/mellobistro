@@ -27,7 +27,7 @@ export const HeroGallery = () => {
   }
 
   return (
-    <section className={classNames("flex flex-col pt-20")}>
+    <section className="flex flex-col pt-20 overflow-hidden">
       <h2 className="self-center text-3xl">Gallery</h2>
       <motion.div
         className="grid gap-8 py-12 m-4 grid-cols-galleryGrid justify-items-center"
