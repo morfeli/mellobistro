@@ -26,7 +26,8 @@ export const HeroImages = ({ image, innerWidth }: HeroHomeImagesProps) => {
   let styles;
 
   if (innerWidth < 1000) {
-    styles = "cursor-pointer m-4 grid-500:last:col-span-2 grid-500:last:w-50vw";
+    styles =
+      "bg-overLay cursor-pointer m-2 grid-500:last:col-span-2 grid-500:last:w-50vw";
   } else {
     styles = "m-4 cursor-pointer last:col-span-1";
   }
@@ -43,9 +44,9 @@ export const HeroImages = ({ image, innerWidth }: HeroHomeImagesProps) => {
     >
       <Image
         src={image}
-        className="rounded-lg"
-        width={350}
-        height={350}
+        className="rounded-lg opacity-90"
+        width={500}
+        height={500}
         alt="Images"
       />
     </motion.div>

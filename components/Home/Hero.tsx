@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 
-import imageOne from "../../public/landing/landing-1.jpg";
-import imageTwo from "../../public/landing/landing-2.jpg";
-import imageThree from "../../public/landing/landing-3.jpg";
+import imageOne from "../../public/landing/landing-6.jpg";
+import imageTwo from "../../public/landing/landing-5.jpg";
+import imageThree from "../../public/landing/landing-15.jpg";
 import { HeroImages } from "./HeroImages";
 import { Map } from "./Map";
 

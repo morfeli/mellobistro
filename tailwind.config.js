@@ -31,7 +31,7 @@ module.exports = {
       width: {
         "25vw": "25vw",
         "40vw": "40vw",
-        "50vw": "45vw",
+        "50vw": "50vw",
         "75vw": "75vw",
       },
       height: {

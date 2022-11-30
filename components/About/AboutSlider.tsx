@@ -20,7 +20,7 @@ export const AboutSlider = () => {
 
   return (
     <div className="pt-8 m-4">
-      <div className="max-w-md m-auto overflow-hidden">
+      <div className="max-w-xl m-auto overflow-hidden">
         <motion.div
           animate={{ translateX: `${-index * 100}%` }}
           transition={{ ease: "easeOut", duration: 1 }}
@@ -31,8 +31,8 @@ export const AboutSlider = () => {
               key={i}
               src={image}
               alt="Mello Bistro Ownership"
-              width={600}
-              height={650}
+              width={700}
+              height={700}
               className="inline-block m-2 rounded-3xl"
               priority
             />
