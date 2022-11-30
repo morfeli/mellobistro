@@ -9,7 +9,7 @@ export const MenuData = [
       },
 
       {
-        name: "Tuna Tartare ",
+        name: "Tuna Tartare",
         description:
           "Avocado mousse, shiracha aioli, capers, ginger, pickle onions",
         price: "16.95",
@@ -38,7 +38,7 @@ export const MenuData = [
         price: "14.95",
       },
       {
-        name: "Portobello ripieni",
+        name: "Portobello Ripieni",
         description:
           "Gratin & stuffed portobello with ricotta, artichokes, spinach, roasted red pepper-tarragon coulis",
         price: "14.95",
@@ -102,18 +102,18 @@ export const MenuData = [
         price: "16.95",
       },
       {
-        name: "Black linguine del Pescatora",
+        name: "Black Linguine del Pescatora",
         description:
           "Homemade squid ink pasta, clams, mussels, shrimp, scallops, calamari, basil, fresh tomato",
         price: "31.95",
       },
       {
-        name: "Penne alla Vodka Mello",
+        name: "Penne alla Vodka",
         description: "Shrimp, mushrooms, peas & Mello's vodka sauce",
         price: "18.95",
       },
       {
-        name: "Linguine alla Vongole",
+        name: "Linguine alle Vongole",
         description: "Linguine, claims, garlic, italian parsely, white wine",
         price: "25.95",
       },
@@ -164,7 +164,7 @@ export const MenuData = [
         price: "37.95",
       },
       {
-        name: "Pecan crusted Salmon",
+        name: "Pecan Crusted Salmon",
         description:
           "Lemon pecan crust, potato puree, rainbow carrots, citrus emulsion",
         price: "34.95",
@@ -202,7 +202,7 @@ export const MenuData = [
         price: "25.95",
       },
       {
-        name: "Chicken Parma vodka sauce",
+        name: "Chicken Parma",
         description:
           "Crispy chicken gratin with mozzarella cheese, in Mello’s vodka sauce served with capellini al pomodoro",
         price: "26.95",
@@ -228,7 +228,7 @@ export const MenuData = [
         price: "39.95",
       },
       {
-        name: "Stuffed pork chop al Dijon",
+        name: "Stuffed Pork Chop al Dijon",
         description:
           "Prime French-cut pork chop with smoked mozzarella, spinach, prosciutto, mushroom dijon mustard sauce, braised rainbow carrots, rosemary fingerling potatoes",
         price: "29.95",
@@ -280,23 +280,23 @@ export const MenuData = [
         price: "10.00",
       },
       {
-        name: "Creme brulee",
+        name: "Creme Brulee",
         description: "Classic vanilla custard, caramelized sugar crust",
         price: "10.00",
       },
       {
-        name: "Apple tart",
+        name: "Apple Tart",
         description:
           "Puff pastry, caramelized applies, caramel, vanilla ice cream",
         price: "10.00",
       },
       {
-        name: "Panna cotta",
+        name: "Panna Cotta",
         description: "Coconut custard, strawberry coulis",
         price: "10.00",
       },
       {
-        name: "Chocolate tartufo",
+        name: "Chocolate Tartufo",
 
         price: "10.00",
       },
@@ -317,7 +317,7 @@ export const MenuData = [
       },
 
       {
-        name: "Coconut Sorbet",
+        name: "Sorbet of the day",
         price: "10.00",
       },
     ],
