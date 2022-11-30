@@ -26,8 +26,7 @@ export const HeroImages = ({ image, innerWidth }: HeroHomeImagesProps) => {
   let styles;
 
   if (innerWidth < 1000) {
-    styles =
-      "bg-overLay cursor-pointer m-2 grid-500:last:col-span-2 grid-500:last:w-50vw";
+    styles = "cursor-pointer m-2 grid-500:last:col-span-2 grid-500:last:w-50vw";
   } else {
     styles = "m-4 cursor-pointer last:col-span-1";
   }
