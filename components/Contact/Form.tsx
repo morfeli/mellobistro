@@ -292,8 +292,8 @@ export const Form = () => {
         </button>
       </form>
       <Modal show={renderModal} onClose={onClose}>
-        Thank you for reaching out to us. We will be in contact within the next
-        24 hours!
+        Thank you for your inquire! We will be in contact within the next 24
+        hours.
       </Modal>
     </>
   );
