@@ -305,16 +305,6 @@ export const MenuData = [
 
         price: "10.00",
       },
-      {
-        name: "Chocolate Pistachio Ice Cream",
-
-        price: "10.00",
-      },
-      {
-        name: "Dairy Free Caramel and Vanilla Ice Cream",
-
-        price: "10.00",
-      },
 
       {
         name: "Sorbet of the day",
