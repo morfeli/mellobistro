@@ -59,13 +59,13 @@ export const aboutSliderImages = [
 export const privateImageArray = [private2, private3, private4, private5];
 
 export const galleryImageArray = [
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-  gallery6,
-  gallery7,
-  gallery8,
-  gallery9,
+  { image: gallery1, title: "Sesame Tuna" },
+  { image: gallery2, title: "Panna Cotta" },
+  { image: gallery3, title: "Linguine del Pescatore" },
+  { image: gallery4, title: "Chicken Parma" },
+  { image: gallery5, title: "Tuna Tartate" },
+  { image: gallery6, title: "Chocolatissimo" },
+  { image: gallery7, title: "Octopus" },
+  { image: gallery8, title: "Coq au Vin" },
+  { image: gallery9, title: "Short Ribs" },
 ];

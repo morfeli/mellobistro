@@ -9,7 +9,7 @@ type ModalProps = {
   children?: React.ReactNode;
   onClose: React.MouseEventHandler<HTMLButtonElement>;
   show: boolean;
-  item?: StaticImageData | null;
+  item?: { image: StaticImageData; title: string } | null;
 };
 
 export const Modal = ({ show, onClose, item, children }: ModalProps) => {
@@ -25,13 +25,13 @@ export const Modal = ({ show, onClose, item, children }: ModalProps) => {
         {item && (
           <div className="m-2">
             <Image
-              src={item}
+              src={item.image}
               width={375}
               height={375}
               className="rounded-md"
               alt="Image"
             />
-            <p>Enter image description here</p>
+            <p className="py-4 text-2xl text-center">{item.title}</p>
           </div>
         )}
         {children && (

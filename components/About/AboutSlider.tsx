@@ -31,8 +31,9 @@ export const AboutSlider = () => {
               key={i}
               src={image}
               alt="Mello Bistro Ownership"
-              width={700}
               height={700}
+              width={700}
+              objectFit="cover"
               className="inline-block m-2 rounded-3xl"
               priority
             />

@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import classNames from "classnames";
 
 import { Modal } from "../Modal/Modal";
 import { galleryImageArray } from "../Home/Images";
@@ -9,10 +8,10 @@ import { galleryImageArray } from "../Home/Images";
 export const HeroGallery = () => {
   const [renderModal, setRenderModal] = useState<{
     show: boolean;
-    item: StaticImageData | null;
+    item: { image: StaticImageData; title: string } | null;
   }>({ show: false, item: null });
 
-  function renderModalHandler(item: StaticImageData) {
+  function renderModalHandler(item: { image: StaticImageData; title: string }) {
     setRenderModal({
       show: true,
       item: item,
@@ -54,7 +53,7 @@ export const HeroGallery = () => {
             onClick={() => renderModalHandler(item)}
           >
             <Image
-              src={item}
+              src={item.image}
               width={350}
               height={350}
               className="m-4 rounded-md"

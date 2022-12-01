@@ -36,9 +36,7 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
           <Image src={LogoSVG} alt="logo" width={100} />
         </Link>
         <div className="flex items-center justify-between">
-          {isMobile && (
-            <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
-          )}
+          <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
         </div>
         <MobileMenu isOpen={isOpen} isMobile={isMobile} closeMenu={closeMenu} />
       </motion.header>
