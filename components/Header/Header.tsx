@@ -33,7 +33,11 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
         <Link href="/">
-          <Image src={LogoSVG} alt="logo" width={100} />
+          <img
+            src="/SVG/logo-army-green.svg"
+            alt="logo"
+            className="w-24 h-24"
+          />
         </Link>
         <div className="flex items-center justify-between">
           <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
@@ -50,11 +54,10 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
       >
         <Link href="/">
-          <Image
-            src={LogoSVG}
+          <img
+            src="/SVG/logo-army-green.svg"
             alt="logo"
-            width={150}
-            className="cursor-pointer"
+            className="w-24 h-24"
           />
         </Link>
         <div className="flex items-center justify-between">
