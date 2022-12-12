@@ -31,6 +31,8 @@ export const Map = () => {
       .setPopup(new mapboxgl.Popup({ offset: 25 }))
       .addTo(mapboxMap);
 
+    mapboxMap.scrollZoom.disable();
+
     setMap(mapboxMap);
 
     return () => {

@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 
 import { MobileMenuBtn } from "./MobileMenuBtn";
 import { MobileMenu } from "./MobileMenu";
-import LogoSVG from "../../public/SVG/logo-army-green.svg";
-
 import { Navigation } from "./Navigation";
 
 export type HeaderProps = {
