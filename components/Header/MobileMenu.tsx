@@ -1,4 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { FacebookSVG } from "../SVGS/FacebookSVG";
+import { InstagramSVG } from "../SVGS/Instagram";
+import { UberEatsSVG } from "../SVGS/UberEatsSVG";
+import { YelpSVG } from "../SVGS/YelpSVG";
 import { NavItem } from "./NavItem";
 
 type MobileMenuProps = {
@@ -48,6 +52,12 @@ export const MobileMenu = ({
             <NavItem isMobile={isMobile} closeMenu={closeMenu} link="/contact">
               Contact
             </NavItem>
+            <div className="flex">
+              <FacebookSVG />
+              <InstagramSVG />
+              <YelpSVG />
+              <UberEatsSVG />
+            </div>
           </ul>
         </motion.nav>
       )}

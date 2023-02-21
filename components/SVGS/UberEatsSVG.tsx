@@ -1,10 +1,14 @@
 export const UberEatsSVG = () => {
   return (
-    <a href="https://www.ubereats.com/store/trattoria-il-cafone/2m9Q5lyCQViIQBjfTYxKhA">
+    <a
+      href="https://www.ubereats.com/store/mello-bistro/SZsKtoCwVmC7TE6diRbdKg?diningMode=DELIVERY&ps=1"
+      target="_blank"
+      rel="noreferrer"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 160.37 160.37"
-        className="w-12 m-2 cursor-pointer md:w-20"
+        className="w-12 m-2 transition duration-300 ease-in-out cursor-pointer md:w-20 opacity-70 hover:opacity-100"
       >
         <g data-name="Layer 2">
           <rect width="160.37" height="160.37" fill="#142328" rx="31.59"></rect>

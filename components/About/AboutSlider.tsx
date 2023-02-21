@@ -40,7 +40,7 @@ export const AboutSlider = () => {
           ))}
         </motion.div>
       </div>
-      <div className="flex justify-center pt-4">
+      {/* <div className="flex justify-center pt-4">
         {aboutSliderImages.map((dot, idx) => (
           <div
             onClick={() => {
@@ -59,7 +59,7 @@ export const AboutSlider = () => {
             )}
           ></div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,6 +1,10 @@
 import { NavItem } from "../Header/NavItem";
 import Image from "next/image";
 import LogoWordMark from "../../public/SVG/logo-wordmark-pearl.svg";
+import { FacebookSVG } from "../SVGS/FacebookSVG";
+import { InstagramSVG } from "../SVGS/Instagram";
+import { YelpSVG } from "../SVGS/YelpSVG";
+import { UberEatsSVG } from "../SVGS/UberEatsSVG";
 
 type FooterProps = {
   isMobile: boolean;
@@ -12,7 +16,7 @@ export const Footer = ({ isMobile }: FooterProps) => {
       <div className="mx-auto w-60 md:w-96">
         <Image src={LogoWordMark} alt="Logo word mark" priority />
       </div>
-      <ul className="flex flex-col items-center text-center sm:flex-row sm:justify-between sm:w-screen sm:px-2">
+      <ul className="flex flex-col items-center text-center sm:flex-row sm:justify-between">
         <NavItem isMobile={isMobile} link="/" footer>
           Home
         </NavItem>
@@ -32,6 +36,12 @@ export const Footer = ({ isMobile }: FooterProps) => {
           Contact
         </NavItem>
       </ul>
+      <div className="flex justify-between pt-8">
+        <FacebookSVG />
+        <InstagramSVG />
+        <YelpSVG />
+        <UberEatsSVG />
+      </div>
     </footer>
   );
 };
