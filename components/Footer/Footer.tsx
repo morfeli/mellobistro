@@ -39,7 +39,6 @@ export const Footer = ({ isMobile }: FooterProps) => {
       <div className="flex justify-between pt-8">
         <FacebookSVG />
         <InstagramSVG />
-        <YelpSVG />
         <UberEatsSVG />
       </div>
     </footer>

@@ -55,7 +55,6 @@ export const MobileMenu = ({
             <div className="flex">
               <FacebookSVG />
               <InstagramSVG />
-              <YelpSVG />
               <UberEatsSVG />
             </div>
           </ul>
