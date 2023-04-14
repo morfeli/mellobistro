@@ -86,7 +86,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           </p>
           <p className="text-xl">718.285.4574</p>
           <h2 className="text-xl">Saturday & Sunday</h2>
-          <p>10:30am - 2:30pm Brunch Hours</p>
+          <p>10:30am - 2:30pm Brunch Menu</p>
           <p>3:00pm - 11:00pm Main Menu</p>
           <h2 className="text-xl">Monday</h2>
           <p>Closed</p>
