@@ -81,17 +81,53 @@ export const Hero = ({ innerWidth }: HeroProps) => {
         </div>
         <div className="flex flex-col items-center pt-12">
           <h2 className="text-3xl">Hours & Location</h2>
-          <p className="py-2 text-xl">
-            1233 Bay Street, Staten Island, NY 10305
-          </p>
+          <p className="text-xl">1233 Bay Street, Staten Island, NY 10305</p>
           <p className="text-xl">718.285.4574</p>
-          <h2 className="text-xl">Saturday & Sunday</h2>
-          <p>10:30am - 2:30pm Brunch Menu</p>
-          <p>3:00pm - 11:00pm Main Menu</p>
-          <h2 className="text-xl">Monday</h2>
-          <p>Closed</p>
-          <h2 className="text-xl">Tuesday - Friday</h2>
-          <p className="pb-4">1:00pm - 11:00pm</p>
+
+          <div className="w-96">
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Saturday</h2>
+              <div>
+                <p className="text-lg">11:00am - 2:00pm Brunch Menu</p>
+                <p className="text-lg">2:00pm - 11:00pm Main Menu</p>
+              </div>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Sunday</h2>
+              <div>
+                <p className="text-lg">11:00am - 2:00pm Brunch Menu</p>
+                <p className="text-lg">2:00pm - 10:00pm Main Menu</p>
+              </div>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Monday</h2>
+              <p className="text-lg">Closed</p>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Tuesday</h2>
+              <p className="pb-4 text-lg">5:00pm - 10:00pm</p>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Wednesday</h2>
+              <p className="pb-4 text-lg">5:00pm - 10:00pm</p>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Thursday</h2>
+              <p className="pb-4 text-lg">1:00pm - 10:00pm</p>
+            </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Friday</h2>
+              <p className="pb-4 text-lg">1:00pm - 11:00pm</p>
+            </div>
+          </div>
+
           <Map />
         </div>
       </div>
