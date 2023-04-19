@@ -89,7 +89,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
               <h2 className="text-xl">Saturday</h2>
               <div>
                 <p className="text-lg">11:00am - 2:00pm Brunch Menu</p>
-                <p className="text-lg">2:00pm - 11:00pm Main Menu</p>
+                <p className="text-lg">2:00pm - 11:00pm Dinner Menu</p>
               </div>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
@@ -98,7 +98,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
               <h2 className="text-xl">Sunday</h2>
               <div>
                 <p className="text-lg">11:00am - 2:00pm Brunch Menu</p>
-                <p className="text-lg">2:00pm - 10:00pm Main Menu</p>
+                <p className="text-lg">2:00pm - 10:00pm Dinner Menu</p>
               </div>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
