@@ -27,19 +27,21 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
+        className="fixed z-[60] text-white w-screen transition duration-300 ease-in-out bg-opacity-50 shadow-lg transform-gpu border-b-2 backdrop-blur-sm "
       >
-        <Link href="/">
-          <img
-            src="/SVG/logo-army-green.svg"
-            alt="logo"
-            className="w-24 h-24"
+        <div className="flex items-center justify-between w-screen px-2 bg-opacity-40 bg-zinc-800 ">
+          <Link href="/">
+            <img src="/SVG/logo-pearl.svg" alt="logo" className="w-24 h-24" />
+          </Link>
+          <div className="flex items-center justify-between">
+            <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
+          </div>
+          <MobileMenu
+            isOpen={isOpen}
+            isMobile={isMobile}
+            closeMenu={closeMenu}
           />
-        </Link>
-        <div className="flex items-center justify-between">
-          <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
         </div>
-        <MobileMenu isOpen={isOpen} isMobile={isMobile} closeMenu={closeMenu} />
       </motion.header>
     );
   } else {
@@ -48,17 +50,15 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="fixed top-0 z-50 flex items-center justify-between w-screen h-24 p-4 transition-colors duration-1000 bg-gradient-to-b from-white"
+        className="fixed z-[60] text-white w-screen transition duration-300 ease-in-out bg-opacity-50 shadow-lg transform-gpu border-b-2 backdrop-blur-sm "
       >
-        <Link href="/">
-          <img
-            src="/SVG/logo-army-green.svg"
-            alt="logo"
-            className="w-24 h-24"
-          />
-        </Link>
-        <div className="flex items-center justify-between">
-          <Navigation />
+        <div className="flex items-center justify-between w-screen px-8 bg-opacity-40 bg-zinc-800 h-[70px]">
+          <Link href="/">
+            <img src="/SVG/logo-pearl.svg" alt="logo" className="w-24 h-24" />
+          </Link>
+          <div className="flex items-center justify-between">
+            <Navigation />
+          </div>
         </div>
       </motion.header>
     );

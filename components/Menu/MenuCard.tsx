@@ -1,10 +1,10 @@
 type MenuCardProps = {
   data: {
-    name: string;
+    name?: string;
     description?: string;
     price?: string;
   }[];
-  title: string;
+  title?: string;
 };
 
 export const MenuCard = ({ data, title }: MenuCardProps) => {

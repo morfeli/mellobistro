@@ -7,7 +7,12 @@ export const MenuData = [
           "White wine steamed mussels, vine ripe tomatoes, garlic, fresh herbs, focaccia crostini",
         price: "14.95",
       },
-
+      {
+        name: "Portobello Ripieni",
+        description:
+          "Gratin & stuffed portobello with ricotta, spinach, roasted red pepper-tarragon coulis",
+        price: "14.95",
+      },
       {
         name: "Tuna Tartare",
         description:
@@ -24,7 +29,7 @@ export const MenuData = [
         name: "Mediterrean Octopus",
         description:
           "Grilled octopus, fingerling potato, lemon basil, truffle oil, black olive tapenade & pickles onions",
-        price: "19.95",
+        price: "20.95",
       },
       {
         name: "Mello’s Crab Cakes",
@@ -35,26 +40,20 @@ export const MenuData = [
       {
         name: "Crispy Fried Calamari",
         description: "Tartare sauce, spicy arrabiata sauce, pickled onions",
-        price: "14.95",
+        price: "15.95",
       },
       {
-        name: "Portobello Ripieni",
+        name: "Bruschetta al Formaggio",
         description:
-          "Gratin & stuffed portobello with ricotta, artichokes, spinach, roasted red pepper-tarragon coulis",
-        price: "14.95",
-      },
-      {
-        name: "Antipasta Freddi",
-        description:
-          "Grilled vegetables, fresh mozzarella, shaved parmesan, proscuitto, marinated artichokes basil oil & balsamic reduction",
-        price: "21.95",
+          "TGarlic toasted focaccia topped with marinated tomato and fresh mozzarella, prosciutto di parma and arugula",
+        price: "16.95",
       },
     ],
     salads: [
       {
-        name: "Caprese Salad",
+        name: "Kale Salad",
         description:
-          "Fresh mozzarella, tomato, basil oil, heirloom grape tomato confit, balsamic reduction",
+          "Baby kale, applies, candied cranberries, caramelized pecans hearts of palm, cilantro lemon ginger dressing",
         price: "13.95",
       },
       {
@@ -81,20 +80,14 @@ export const MenuData = [
           "Julienne endive, New York apples & pecans, shallot confit-Lemon vinaigrette, balsamic reduction, goat cheese crumble",
         price: "14.95",
       },
-      {
-        name: "Panzanella Salad",
-        description:
-          "Mixed greens, tomatoes, capers, black olives, red onions, bread style croutons, balsamic basil dressing",
-        price: "13.95",
-      },
     ],
 
     pasta: [
       {
-        name: "Spaghetti con Gamberoni",
+        name: "Linguine Acqua Pazza",
         description:
-          "Shrimp, mushroom, broccoli rabe, subdried tomato, garlic and oil, truffle oul",
-        price: "17.95",
+          "Linguine, mussels, calamari, roasted fennel, grape tomatoes, olives, fresh herbs in garlic and oil white wine sauce",
+        price: "16.95",
       },
       {
         name: "Gnocchi Genovese",
@@ -108,7 +101,7 @@ export const MenuData = [
         price: "31.95",
       },
       {
-        name: "Penne alla Vodka",
+        name: "Penne alla Vodka Mello",
         description: "Shrimp, mushrooms, peas & Mello's vodka sauce",
         price: "18.95",
       },
@@ -138,16 +131,16 @@ export const MenuData = [
       },
 
       {
-        name: "Capellini al Portobello",
+        name: "Spahgetti con Gamberoni",
         description:
-          "Portobello, sun dried tomatoes, arugula, garlic & a touch of pesto",
-        price: "15.95",
+          "Shrimp, mushroom, broccoli rabe, sun dried tomato, garlic and oil & a touch  of trubble oil",
+        price: "27.95",
       },
       {
-        name: "Penne al Arrabbiata",
+        name: "Spinach Fettuccine al Funghi",
         description:
-          "Penne, garlic, red pepper flakes, basil & parsley tomato sauce",
-        price: "15.95",
+          "Homemade spinach fettuccine, mushrooms in truffle cream sauce",
+        price: "16.95",
       },
     ],
     pesce: [
@@ -190,10 +183,10 @@ export const MenuData = [
     ],
     pollo: [
       {
-        name: "Coq au Vin",
+        name: "Pollo alla Dijon",
         description:
-          "Red wine braised chicken legs, bacon lardons, button mushrooms, pearl onions, creamy polenta",
-        price: "27.95",
+          "Chicken breast, dijon mushrooms, truffle cream sauce, roasted almonds, potato puree, spinach",
+        price: "25.95",
       },
       {
         name: "Blackened Chicken",
@@ -202,31 +195,25 @@ export const MenuData = [
         price: "25.95",
       },
       {
-        name: "Chicken Parma",
+        name: "Chicken Parma Vodka Sauce",
         description:
           "Crispy chicken gratin with mozzarella cheese, in Mello’s vodka sauce served with capellini al pomodoro",
         price: "26.95",
       },
       {
-        name: "Grilled Pollo Paillard",
+        name: "Pollo al Pesto",
         description:
-          "Thinly pounded chicken breast served with arugula, grape tomatoes, grilled portobello, avocado, truffle lemon dressing, balsamic reduction",
-        price: "23.95",
+          "Chicken breast, sun dried tomato, fresh mozzarella, pesto cream sauce, potato puree, roasted rainbow carrots",
+        price: "25.95",
       },
       {
-        name: "Pollo al Balsamic",
+        name: "Pollo alla Francese",
         description:
-          "Chicken breast, spinach, prosciutto, smoked mozzarella, demi balsamic reduction",
-        price: "25.95",
+          "Chicken breast in lemon white wine sauce, potato puree, spinach",
+        price: "24.95",
       },
     ],
     carni: [
-      {
-        name: "Ribeye Steak au Poivre",
-        description:
-          "16oz grilled ribeye steak, peppercorn cognac cream sauce & risotto al funghi and truffle oil",
-        price: "39.95",
-      },
       {
         name: "Stuffed Pork Chop al Dijon",
         description:
@@ -250,8 +237,8 @@ export const MenuData = [
       {
         name: "Vegan Burger",
         description:
-          "Lentils, mushrooms, quinoa, walnuts, roasted veggies, arugula, avocado spread, vegan mozzarella cheese, vegan potato roll, remoulade sauce",
-        price: "15.95",
+          "Peas, broccoli, carrots and spinach with lettuce, arugula and tomato with french fries.",
+        price: "16.95",
       },
       {
         name: "Gluten Free Penne",
@@ -312,14 +299,238 @@ export const MenuData = [
       },
     ],
     sides: [
-      { name: "Sautéed broccoli di rabe", price: "8.95" },
-      { name: "Sautéed mushrooms", price: "7.95" },
-      { name: "Parmesan truffle french fries", price: "7.95" },
+      { name: "Sautéed garlic and oil mushrooms", price: "7.95" },
+      { name: "Sautéed broccoli di rabe", price: "7.95" },
       { name: "Roasted rainbow carrots", price: "7.95" },
+      { name: "Parmesan truffle french fries", price: "7.95" },
     ],
     kids: [
       { name: "Chicken fingers with french fries", price: "13.95" },
-      { name: "Fried mozzarella with french fries", price: "13.95" },
+      { name: "Spaghetti alfredo", price: "13.95" },
+    ],
+  },
+];
+
+export const BrunchMenuData = [
+  {
+    main: [
+      {
+        name: "Avocado Toast",
+        description:
+          "Toasted sourdough, arugula, creamy avocado, pickled onions, soft poached egg",
+        price: "14.95",
+      },
+      {
+        name: "Classic Eggs Benedict",
+        description:
+          "Toasted English muffin, Canadian bacon, soft poached eggs, béarnaise sauce, home fries",
+        price: "15.95",
+      },
+      {
+        name: "Bistro Omelette",
+        description:
+          "Omelette, prosciutto, arugula, fresh mozzarella, grape tomatoes, home fries",
+        price: "14.95",
+      },
+      {
+        name: "Soft Scrambled Caacio e Pepe",
+        description: "Black pepper, pecorino, home fries and bacon",
+        price: "13.95",
+      },
+      {
+        name: "Steak & Eggs",
+        description:
+          "Grilled sirloin steak, two eggs any style, home fries and bearnaise sauce",
+        price: "26.95",
+      },
+      {
+        name: "Shakshouka",
+        description:
+          "Soft poached eggs in spiced tomato sauce, fresh herbs, onion. peppers, garlic and toasted focaccia",
+        price: "14.95",
+      },
+      {
+        name: "French Omelette",
+        description:
+          "French style omelette, ham, mushroom duxelles, gruyere cheese, truffled home fries",
+        price: "14.95",
+      },
+      {
+        name: "Frittata Italiana",
+        description:
+          "Baked eggs with mushrooms, spinach, ricotta, artichoke, parmesan cheese, basil oil",
+        price: "15.95",
+      },
+      {
+        name: "French Toast a L'organe ",
+        description: "Brioche toast, orange, crème fraiche and salted caramel",
+        price: "14.95",
+      },
+      {
+        name: "Blueberry Buttermilk Pancake ",
+        description:
+          "Chef's secret pancake recipe, blueberry compote, creme anglaise, butter & maple syrup",
+        price: "14.95",
+      },
+      {
+        name: "Bistro Burger ",
+        description:
+          "10 oz Angus burger, thick cut bacon, caramelized onion. smoked mozzarella cheese, arugula, tomato, remoulade sauce, toasted brioche, truffle and parmesan fries",
+        price: "16.95",
+      },
+      {
+        name: "Veggie Burger ",
+        description:
+          "Peas, broccoli, carrots and spinach patty with lettuce, arugula, tomato & french fries",
+        price: "15.95",
+      },
+      {
+        name: "Crab Cake Burger",
+        description:
+          "Bomemade pan seared crab cake, avocado, remoulade sauce, pickled onion lennel slaw and sweet potato fries",
+        price: "21.95",
+      },
+      {
+        name: "Bistro Turkey Club",
+        description:
+          "Turkev breast, arugula, tomato, bacon, avocado, pesto aioli, on toasted sourdough bread",
+        price: "17.95",
+      },
+      {
+        name: "Smoked Salmon Platter",
+        description:
+          "Smoked salmon, pickled onions, capers, black truttle pate, served with toasted focaccia",
+        price: "17.95",
+      },
+      {
+        name: "Croque Monsieur",
+        description:
+          "Ham and cheese on nice & toasted sourdough bread, béchamel sauce, gruyère cheese....add an over easy egg for a Croque Madame $2",
+        price: "17.95",
+      },
+      {
+        name: "Cheese Bread & Prosciutto",
+        description:
+          "Traditional Brazilian cheese bread baked to perfection served with prosciutto (GE)",
+        price: "13.95",
+      },
+      {
+        name: "Fruit & Cheese Board",
+        description: "Chef's selection of assorted fruits and cheeses",
+        price: "21.95",
+      },
+      {
+        name: "Shrimp Slaw Tartine",
+        description:
+          "Shrimp, fennel, pickled onion slaw, creamy avocado on toasted sourdough bread",
+        price: "17.95",
+      },
+      {
+        name: "Grilled Chicken Ceasar Salad",
+        description:
+          "Creany ceasar dressing, galric cruotons, parmigiano reggiano with grilled chicken",
+        price: "16.95",
+      },
+    ],
+
+    beverages: [
+      {
+        coffee: [
+          {
+            name: "Regular coffee",
+            price: "2.99",
+          },
+          {
+            name: "Capuccino",
+            price: "4.95",
+          },
+          {
+            name: "Latte (iced or hot)",
+            price: "5.95",
+          },
+          {
+            name: "Espresso",
+            price: "3.95",
+          },
+          {
+            name: "All teas",
+            price: "5.95",
+          },
+        ],
+      },
+      {
+        juices: [
+          {
+            name: "Orange juice",
+            price: "4.95",
+          },
+          {
+            name: "Apple juice",
+            price: "4.95",
+          },
+          {
+            name: "Pineapple mint juice",
+            price: "6.95",
+          },
+          {
+            name: "Mango juice",
+            price: "6.95",
+          },
+          {
+            name: "Orange & carrot juice",
+            price: "6.95",
+          },
+        ],
+      },
+      {
+        cocktails: [
+          {
+            name: "Mimosa",
+            description:
+              "Choose your flavor... Passion Fruit, Peach, Pineapple or Orange",
+            price: "10.95",
+          },
+          {
+            name: "Bloody Mary",
+            price: "14.95",
+          },
+          {
+            name: "Coconut mojito",
+            price: "14.95",
+          },
+        ],
+      },
+    ],
+
+    brunchSides: [
+      {
+        name: "Parmesan truffle fries",
+        price: "7.00",
+      },
+      {
+        name: "Home fries",
+        price: "5.00",
+      },
+      {
+        name: "Bacon",
+        price: "5.00",
+      },
+      {
+        name: "Sweet potato fries",
+        price: "6.00",
+      },
+      {
+        name: "Toasted sourdough",
+        price: "2.50",
+      },
+      {
+        name: "Extra egg",
+        price: "2.00",
+      },
+      {
+        name: "Avocado",
+        price: "3.00",
+      },
     ],
   },
 ];

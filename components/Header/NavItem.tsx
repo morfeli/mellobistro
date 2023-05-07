@@ -17,11 +17,10 @@ export const NavItem = ({
   footer,
 }: NavItemProps) => {
   const navItemStyle = classnames(
-    "list-none  text-sm tracking-widest font-semibold uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-eerie-black after:transition-all duration-700 hover:after:w-full",
+    "list-none  text-sm tracking-widest font-semibold uppercase mx-4 cursor-pointer after:block after:w-0 after:h-0.5 after:bg-white after:transition-all duration-700 hover:after:w-full",
     {
       "my-4": isMobile,
       "md:mx-8": footer,
-      "after:bg-white": footer,
       "text-white": footer || isMobile,
       "w-fit": footer,
       "mx-auto": footer,

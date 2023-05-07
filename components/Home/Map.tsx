@@ -41,8 +41,8 @@ export const Map = () => {
   }, []);
 
   return (
-    <div>
-      <div ref={mapContainer} className="rounded-md w-75vw h-96 lg:w-50vw" />
+    <div className="p-2 mx-auto bg-white rounded-md">
+      <div ref={mapContainer} className="rounded-md w-75vw h-96" />
     </div>
   );
 };
