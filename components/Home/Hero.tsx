@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-
 import imageOne from "../../public/landing/landing-6.jpg";
 import imageTwo from "../../public/landing/landing-5.jpg";
 import imageThree from "../../public/landing/landing-15.jpg";
@@ -89,21 +88,21 @@ export const Hero = ({ innerWidth }: HeroProps) => {
 
           <div className="px-2 pt-4 w-80 sm:w-[75vw] lg:w-[400px]">
             <div className="flex justify-between py-2">
-              <h2 className="text-xl">Saturday</h2>
-              <div>
-                <p className="text-lg">11:00am - 11:00pm </p>
-                <p>Brunch avaliable until 2pm</p>
-              </div>
-            </div>
-            <hr className="w-full h-0.5 bg-hunter-green" />
-
-            <div className="flex justify-between py-2">
               <h2 className="text-xl">Sunday</h2>
               <div>
                 <p className="text-lg">11:00am - 11:00pm</p>
                 <p>Brunch avaliable until 2pm</p>
               </div>
             </div>
+            <hr className="w-full h-0.5 bg-hunter-green" />
+            <div className="flex justify-between py-2">
+              <h2 className="text-xl">Saturday</h2>
+              <div>
+                <p className="text-lg">11:00am - 11:00pm </p>
+                <p>Brunch avaliable until 2pm</p>
+              </div>
+            </div>
+
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Monday</h2>
