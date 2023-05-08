@@ -29,13 +29,12 @@ export const Header = ({ isMobile, navBarScrolled }: HeaderProps) => {
         transition={{ delay: 1 }}
         className="fixed z-[60] text-white w-screen transition duration-300 ease-in-out bg-opacity-50 shadow-lg transform-gpu border-b-2 backdrop-blur-sm "
       >
-        <div className="flex items-center justify-between w-screen px-2 bg-opacity-40 bg-zinc-800 ">
+        <div className="flex items-center justify-between w-screen px-6 bg-opacity-40 bg-zinc-800 ">
           <Link href="/">
-            <img src="/SVG/logo-pearl.svg" alt="logo" className="w-24 h-24" />
+            <img src="/SVG/logo-pearl.svg" alt="logo" className="w-16 h-16" />
           </Link>
-          <div className="flex items-center justify-between">
-            <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
-          </div>
+
+          <MobileMenuBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
           <MobileMenu
             isOpen={isOpen}
             isMobile={isMobile}

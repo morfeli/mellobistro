@@ -3,7 +3,6 @@ import Image from "next/image";
 import LogoWordMark from "../../public/SVG/logo-wordmark-pearl.svg";
 import { FacebookSVG } from "../SVGS/FacebookSVG";
 import { InstagramSVG } from "../SVGS/Instagram";
-import { YelpSVG } from "../SVGS/YelpSVG";
 import { UberEatsSVG } from "../SVGS/UberEatsSVG";
 
 type FooterProps = {
@@ -23,8 +22,8 @@ export const Footer = ({ isMobile }: FooterProps) => {
         <NavItem isMobile={isMobile} link="/about" footer>
           About
         </NavItem>
-        <NavItem isMobile={isMobile} link="/menu" footer>
-          Menu
+        <NavItem isMobile={isMobile} link="/menus" footer>
+          Menus
         </NavItem>
         <NavItem isMobile={isMobile} link="/events" footer>
           Private Events

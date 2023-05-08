@@ -91,12 +91,8 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Saturday</h2>
               <div>
-                <p className="text-lg">
-                  11:00am - 2:00pm <span className="pl-2">Brunch Menu</span>
-                </p>
-                <p className="text-lg">
-                  2:00pm - 11:00pm <span className="pl-2">Main Menu</span>
-                </p>
+                <p className="text-lg">11:00am - 11:00pm </p>
+                <p>Brunch avaliable until 2pm</p>
               </div>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
@@ -104,12 +100,8 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Sunday</h2>
               <div>
-                <p className="text-lg">
-                  11:00am - 2:00pm <span className="pl-2">Brunch Menu</span>
-                </p>
-                <p className="text-lg">
-                  2:00pm - 10:00pm <span className="pl-2">Main Menu</span>
-                </p>
+                <p className="text-lg">11:00am - 11:00pm</p>
+                <p>Brunch avaliable until 2pm</p>
               </div>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
@@ -120,30 +112,22 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Tuesday</h2>
-              <p className="pb-4 text-lg">
-                5:00pm - 10:00pm <span className="pl-2">Main Menu</span>
-              </p>
+              <p className="pb-4 text-lg">5:00pm - 10:00pm</p>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Wednesday</h2>
-              <p className="pb-4 text-lg">
-                5:00pm - 10:00pm <span className="pl-2">Main Menu</span>
-              </p>
+              <p className="pb-4 text-lg">5:00pm - 10:00pm</p>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Thursday</h2>
-              <p className="pb-4 text-lg">
-                1:00pm - 10:00pm <span className="pl-2">Main Menu</span>
-              </p>
+              <p className="pb-4 text-lg">1:00pm - 10:00pm</p>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Friday</h2>
-              <p className="pb-4 text-lg">
-                1:00pm - 11:00pm <span className="pl-2">Main Menu</span>
-              </p>
+              <p className="pb-4 text-lg">1:00pm - 11:00pm</p>
             </div>
           </div>
         </div>

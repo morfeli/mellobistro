@@ -287,11 +287,6 @@ export const MenuData = [
 
         price: "10.00",
       },
-      {
-        name: "Classic Italian Tiramisu",
-
-        price: "10.00",
-      },
 
       {
         name: "Sorbet of the day",
