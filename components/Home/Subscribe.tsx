@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Modal } from "../Modal/Modal";
 
 const isEmpty = (value: string) => value.trim() === "";
-const isTenChars = (value: string) => value.trim().length === 10;
+
 const isEmailValid = (value: string) => {
   const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 

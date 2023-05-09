@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { connectToDatabase } from "../../components/helperFunctions/helperFunctions";
+import moment from "moment";
 
 const isEmpty = (value: string) => value.trim() === "";
 const emailValidation = (value: string) => {
@@ -52,9 +53,14 @@ export default async function newsLetterHandler(
     return;
   }
 
+  const today = new Date("mm/dd/yy");
+
+  const formatToday = moment().calendar(today);
+
   await db.collection("newsletter").insertOne({
     name: name,
     email: email,
+    date: formatToday,
   });
 
   client.close();
