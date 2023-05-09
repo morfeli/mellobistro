@@ -21,6 +21,7 @@ export const Map = () => {
       style: "mapbox://styles/mapbox/streets-v11",
       center: [lat, lng],
       zoom: zoom,
+      attributionControl: false,
     });
 
     const marker = new mapboxgl.Marker({

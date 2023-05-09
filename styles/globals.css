@@ -22,3 +22,7 @@ a {
   color: white;
   background-color: #3a5a40;
 }
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
