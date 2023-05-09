@@ -5,6 +5,7 @@ import imageTwo from "../../public/landing/landing-5.jpg";
 import imageThree from "../../public/landing/landing-15.jpg";
 import { HeroImages } from "./HeroImages";
 import { Map } from "./Map";
+import { Subscribe } from "./Subscribe";
 
 type HeroProps = {
   innerWidth: number;
@@ -132,6 +133,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
         </div>
       </div>
       <Map />
+      <Subscribe />
     </section>
   );
 };
