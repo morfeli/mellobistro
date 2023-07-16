@@ -88,10 +88,11 @@ export const Hero = ({ innerWidth }: HeroProps) => {
           <p className="text-xl">718.285.4574</p>
 
           <div className="px-2 pt-4 w-80 sm:w-[75vw] lg:w-[400px]">
+            <h2 className="text-center text-2xl">Summer Hours</h2>
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Sunday</h2>
               <div>
-                <p className="text-lg">11:00am - 11:00pm</p>
+                <p className="text-lg text-end">12:00pm - 9:00pm</p>
                 <p>Brunch avaliable until 2pm</p>
               </div>
             </div>
@@ -99,8 +100,7 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Saturday</h2>
               <div>
-                <p className="text-lg">11:00am - 11:00pm </p>
-                <p>Brunch avaliable until 2pm</p>
+                <p className="text-lg">1:00pm - 11:00pm </p>
               </div>
             </div>
 
@@ -122,12 +122,12 @@ export const Hero = ({ innerWidth }: HeroProps) => {
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Thursday</h2>
-              <p className="pb-4 text-lg">1:00pm - 10:00pm</p>
+              <p className="pb-4 text-lg">5:00pm - 10:00pm</p>
             </div>
             <hr className="w-full h-0.5 bg-hunter-green" />
             <div className="flex justify-between py-2">
               <h2 className="text-xl">Friday</h2>
-              <p className="pb-4 text-lg">1:00pm - 11:00pm</p>
+              <p className="pb-4 text-lg">5:00pm - 11:00pm</p>
             </div>
           </div>
         </div>
